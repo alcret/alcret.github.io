@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-24T14:17:31.705Z</updated>
+  <updated>2016-07-26T16:17:48.597Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2016/07/27/first%20blog/"/>
+    <id>http://yoursite.com/2016/07/27/first blog/</id>
+    <published>2016-07-26T16:17:28.199Z</published>
+    <updated>2016-07-26T16:17:48.597Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;first-blog&quot;&gt;&lt;a href=&quot;#first-blog&quot; class=&quot;headerlink&quot; title=&quot;first blog&quot;&gt;&lt;/a&gt;first blog&lt;/h1&gt;&lt;p&gt;标签： 第一篇 blog 博客&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这个blog终于被我搭建起来了，这是我第二次建立个人的博客了，第一次搭建是在大学的时候，虽然那个时候blog已经不是很流行了，但是本着折腾折腾的想法，还是用&lt;strong&gt;wordpress&lt;/strong&gt;博客程序尝试了一下。但是非常的可惜没能坚持下来。&lt;br&gt;目前已经毕业快一个月了，而且工作以后希望可以每周都坚持写一些东西出来，作为工作或生活的一些总结吧。所以再次本着折腾折腾的想法，再次建立了这个blog，但这次使用的hexo和githubpage，建立的过程中确实也遇到了不少的问题，感觉网上的教程不是非常的全面系统，只是描绘了一个或几个点而已，所以接下来会尝试写出一个全面的系列性的案例（当然是以我自己为例）。&lt;br&gt;其实在写作这件事情上我做的并不好，甚至有些糟糕（其实想想貌似并没有做好过什么事情），本来表达能力就比较弱，从小到大考试还要写一些歌颂某党、某政府和美好生活的自己都不知道在写什么的大大小小作文，以至于现在练就了一身只要你给个话题就能写、就能歌颂的能力，当然；如果要求字数的话我还是会去查查的，并且我认为最激动的就是写完以后查字数的时刻，最重要的是我自己写完都觉得假，这个习惯倒是保持的很好，只要是写作，自己看内容都觉得很假。但是看了其他网站上一些每天坚持写一千字的网友还挺震撼的，能够每天坚持下来。，所以感觉写出来的东西并没有什么情感，好像也不太真实，所以建立这个博客希望可以改善这一点吧。&lt;br&gt;还有就是工作以后学习到了很多新知识，所以打算在这里分享一些自己学到的东西顺便检验一下自己，并写出心得体会。&lt;br&gt;正好github的静态网页博客很火的样子，就自己动手折腾了一下，感觉还是蛮不错的。好了，就写这么多吧，在写又该感觉假了。接下来要更新利用github建立博客的教程和最近遇到的一些数据库问题。&lt;/p&gt;
+&lt;p&gt;知止而后定，定而后能静，静儿后能安，安而后能虑，虑而后能得。物有本末，事有始终。知所先后，则近道矣–[大学]&lt;/p&gt;
+&lt;p&gt;以此共勉&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;first-blog&quot;&gt;&lt;a href=&quot;#first-blog&quot; class=&quot;headerlink&quot; title=&quot;first blog&quot;&gt;&lt;/a&gt;first blog&lt;/h1&gt;&lt;p&gt;标签： 第一篇 blog 博客&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这个blog终于被我
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>测试</title>
