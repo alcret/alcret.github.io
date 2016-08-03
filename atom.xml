@@ -4,9 +4,9 @@
   <subtitle>Just Do It!!!</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2016-07-29T14:24:18.547Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://alcret.github.io/"/>
+  <updated>2016-07-04T10:21:18.872Z</updated>
+  <id>http://alcret.github.io/</id>
   
   <author>
     <name>张闯</name>
@@ -16,36 +16,9 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://yoursite.com/2016/07/29/%E5%B9%B3%E5%87%A1%E4%B9%8B%E8%B7%AF%E4%B8%A4%E5%B9%B4%E4%BA%86%EF%BC%8C%E4%BD%A0%E8%B5%B0%E5%88%B0%E4%BA%86%E5%93%AA%E9%87%8C%E4%BA%86/"/>
-    <id>http://yoursite.com/2016/07/29/平凡之路两年了，你走到了哪里了/</id>
-    <published>2016-07-29T14:24:29.913Z</published>
-    <updated>2016-07-29T14:24:18.547Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;平凡之路两年了，你走到了哪里了&quot;&gt;&lt;a href=&quot;#平凡之路两年了，你走到了哪里了&quot; class=&quot;headerlink&quot; title=&quot;平凡之路两年了，你走到了哪里了&quot;&gt;&lt;/a&gt;平凡之路两年了，你走到了哪里了&lt;/h1&gt;&lt;p&gt;标签（空格分隔）： 第一篇 blog  博客&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;这个blog终于被搭建起来了，竟然还有种莫名的兴奋感，这是我建立的第二个独立博客了，第一次搭建还是在读大学的时候，虽然那个时候blog已经不是很流行了，但是本着折腾折腾的想法，还是租了一个域名，使用&lt;strong&gt;WordPress&lt;/strong&gt;博客程序尝试了一下。但是非常可惜的是没能坚持下来。&lt;/p&gt;
-&lt;p&gt;距离毕业已经有几个月了，而且在工作之后希望可以每周都坚持写一些东西出来，一方面可以作为工作或生活的一些总结，另一方面可以锻炼一下自己的文笔吧，（虽然觉得自己根本就没有文笔可谈）。所以再次本着折腾折腾的想法，又一次建立起了独立blog，但这次使用的是&lt;strong&gt;Hexo&lt;/strong&gt;和&lt;strong&gt;GithubPage&lt;/strong&gt;，正好最近感觉&lt;strong&gt;GithubPage&lt;/strong&gt;静态网页博客很火的样子，就自己动手折腾了一下，感觉还是蛮不错的。在建立的过程中确实也遇到了不少的问题，感觉网上的教程不是非常的全面和系统，只是描述了一个或几个点而已，所以接下来会尝试写出一个全面的系列性的案例（当然是以我自己为例）。&lt;/p&gt;
-&lt;p&gt;其实在写作这件事情上我做的并不好，甚至非常糟糕（其实想想貌似并没有做好过什么事情），本来表达能力就比较弱，特别是为了应付考试还要写一些歌颂某党、某政府和美好生活的自己都不知道在表达什么的大大小小作文，以至于现在练就了一身只要有个话题就能写、就能歌颂，当然；如果要求字数的话还是会去查查看的，而且这是最让我最激动的时刻。最重要的是我自己写完都觉得假，何况看的人呢，然而这个习惯倒是保持的很好。但是看了其他网站上一些每天坚持写一千字的网友还挺震撼的，能够每天坚持下来，还能够找到要写的话题，正确表达自己的看法和见解我觉得还是非常厉害的。所以建立这个博客希望可以改善这一点吧，或者为生活添加点乐趣。&lt;/p&gt;
-&lt;p&gt;还有就是工作以后学习到了很多新知识，所以打算在这里分享一些自己学到的东西顺便检验一下自己学习的承兑，写总结和心得体会。&lt;/p&gt;
-&lt;p&gt;最后分享一句最近感受颇深的一句话吧。&lt;/p&gt;
-&lt;p&gt;知止而后定，定而后能静，静儿后能安，安而后能虑，虑而后能得。物有本末，事有始终。知所先后，则近道矣–【大学】&lt;/p&gt;
-&lt;p&gt;以此共勉&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;平凡之路两年了，你走到了哪里了&quot;&gt;&lt;a href=&quot;#平凡之路两年了，你走到了哪里了&quot; class=&quot;headerlink&quot; title=&quot;平凡之路两年了，你走到了哪里了&quot;&gt;&lt;/a&gt;平凡之路两年了，你走到了哪里了&lt;/h1&gt;&lt;p&gt;标签（空格分隔）： 第一篇 blog
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2016/07/04/hello-world/"/>
-    <id>http://yoursite.com/2016/07/04/hello-world/</id>
+    <link href="http://alcret.github.io/2016/07/04/hello-world/"/>
+    <id>http://alcret.github.io/2016/07/04/hello-world/</id>
     <published>2016-07-04T10:21:18.872Z</published>
     <updated>2016-07-04T10:21:18.872Z</updated>
     
