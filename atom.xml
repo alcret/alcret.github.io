@@ -43,6 +43,46 @@
   </entry>
   
   <entry>
+    <title>使用GitHub和Hexo搭建Blog系列一——安装</title>
+    <link href="http://alcret.github.io/2016/08/03/tags-%20GitHub%20Blog%20%20Hexo/"/>
+    <id>http://alcret.github.io/2016/08/03/tags- GitHub Blog  Hexo/</id>
+    <published>2016-08-03T09:41:50.000Z</published>
+    <updated>2016-08-04T06:45:52.042Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;使用GitHub和Hexo搭建Blog系列一——安装&quot;&gt;&lt;a href=&quot;#使用GitHub和Hexo搭建Blog系列一——安装&quot; class=&quot;headerlink&quot; title=&quot;使用GitHub和Hexo搭建Blog系列一——安装&quot;&gt;&lt;/a&gt;使用GitHub和Hexo搭建Blog系列一——安装&lt;/h1&gt;&lt;hr&gt;
+&lt;p&gt;##1、准备工作&lt;br&gt;注意：由于本人还没使用过其他平台，所以本文目前只针对&lt;strong&gt;Windows平台&lt;/strong&gt;，其他平台有待更新。&lt;/p&gt;
+&lt;p&gt;###1.1安装Git&lt;br&gt;安装方式方法网上很多教程，此处不再赘述。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;###1.2安装Node.JS&lt;br&gt;配置好GitHub目录后，在Git shell中输入npm命令安装&lt;br&gt;&lt;figure class=&quot;highlight dos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-cli -g&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo --save&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;###1.3  Hexo初始化&lt;br&gt;安装完成后要进行Hexo的初始化操作&lt;/p&gt;
+&lt;p&gt;####1.3.1建立Hexo文件夹&lt;br&gt;根据实际情况建立文件目录（如F:\Blog），启动Git Shell并切换到该路径下，执行一下指令：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;hexo init                       #在文件夹下此命令生成所需文件&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;cd &amp;lt;folder&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;操作结束后，目录如下：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;├── _config.yml&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;├── package.json&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;├── scaffolds&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;├── scripts&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;├── source&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;|      ├── _drafts&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;|      └── _posts&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;└── themes&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;####1.3.2Hexo插件的安装&lt;br&gt;&lt;figure class=&quot;highlight dos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-generator-index --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-generator-archive --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-generator-category --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-generator-tag --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-server --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-deployer-git --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-deployer-heroku --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-deployer-rsync --save  &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-deployer-openshift --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-renderer-marked@&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;.&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-renderer-stylus@&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;.&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-generator-feed@&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-generator-sitemap@&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; --save&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;至此，Hexo安装部署的工作基本已经完成了，下面就是要查看一下本地效果了&lt;/p&gt;
+&lt;p&gt;执行如下指令查看&lt;br&gt;&lt;figure class=&quot;highlight dos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;hexo s&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;成功后在本地浏览器地址栏中输入localhost:4000&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;1.4总结&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1.安装github   #这个下节会用到&lt;br&gt;2安装Node.JS&lt;br&gt;3.建立Hexo文件夹并初始化&lt;br&gt;4.安装插件&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;下期预告：github的使用&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;使用GitHub和Hexo搭建Blog系列一——安装&quot;&gt;&lt;a href=&quot;#使用GitHub和Hexo搭建Blog系列一——安装&quot; class=&quot;headerlink&quot; title=&quot;使用GitHub和Hexo搭建Blog系列一——安装&quot;&gt;&lt;/a&gt;使用GitHub
+    
+    </summary>
+    
+    
+      <category term="GitHub Blog  Hexo" scheme="http://alcret.github.io/tags/GitHub-Blog-Hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
     <link href="http://alcret.github.io/2016/07/04/hello-world/"/>
     <id>http://alcret.github.io/2016/07/04/hello-world/</id>
