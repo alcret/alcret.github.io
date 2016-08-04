@@ -1,37 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
-  
+  <title>冰之原野</title>
+  <subtitle>Just Do It!!!</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2016-08-04T06:14:33.929Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://alcret.github.io/"/>
+  <updated>2016-08-03T09:45:45.973Z</updated>
+  <id>http://alcret.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>张闯</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2016/08/04/hello-world/"/>
-    <id>http://yoursite.com/2016/08/04/hello-world/</id>
-    <published>2016-08-04T06:14:33.929Z</published>
-    <updated>2016-08-04T06:14:33.929Z</updated>
+    <title>平凡之路两年了，你走到哪里了</title>
+    <link href="http://alcret.github.io/2016/08/03/tags-%20%E7%AC%AC%E4%B8%80%E7%AF%87%20Blog%20%20%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://alcret.github.io/2016/08/03/tags- 第一篇 Blog  博客/</id>
+    <published>2016-08-03T09:41:50.000Z</published>
+    <updated>2016-08-03T09:45:45.973Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
+    <content type="html">&lt;p&gt;这个blog终于被搭建起来了，竟然还有种莫名的兴奋感，这是我建立的第二个独立博客了，第一次搭建还是在读大学的时候，虽然那个时候blog已经不是很流行了，但是本着折腾折腾的想法，还是租了一个域名，使用&lt;strong&gt;WordPress&lt;/strong&gt;博客程序尝试了一下。但是非常可惜的是没能坚持下来。&lt;/p&gt;
+&lt;p&gt;距离毕业已经有几个月了，而且在工作之后希望可以每周都坚持写一些东西出来，一方面可以作为工作或生活的一些总结，另一方面可以锻炼一下自己的文笔吧，（虽然觉得自己根本就没有文笔可谈）。所以再次本着折腾折腾的想法，又一次建立起了独立blog，但这次使用的是&lt;strong&gt;Hexo&lt;/strong&gt;和&lt;strong&gt;GithubPage&lt;/strong&gt;，正好最近感觉&lt;strong&gt;GithubPage&lt;/strong&gt;静态网页博客很火的样子，就自己动手折腾了一下，感觉还是蛮不错的。在建立的过程中确实也遇到了不少的问题，感觉网上的教程不是非常的全面和系统，只是描述了一个或几个点而已，所以接下来会尝试写出一个全面的系列性的案例（当然是以我自己为例）。&lt;/p&gt;
+&lt;p&gt;其实在写作这件事情上我做的并不好，甚至非常糟糕（其实想想貌似并没有做好过什么事情），本来表达能力就比较弱，特别是为了应付考试还要写一些歌颂某党、某政府和美好生活的自己都不知道在表达什么的大大小小作文，以至于现在练就了一身只要有个话题就能写、就能歌颂，当然；如果要求字数的话还是会去查查看的，而且这是最让我最激动的时刻。最重要的是我自己写完都觉得假，何况看的人呢，然而这个习惯倒是保持的很好。但是看了其他网站上一些每天坚持写一千字的网友还挺震撼的，能够每天坚持下来，还能够找到要写的话题，正确表达自己的看法和见解我觉得还是非常厉害的。所以建立这个博客希望可以改善这一点吧，或者为生活添加点乐趣。&lt;/p&gt;
+&lt;p&gt;还有就是工作以后学习到了很多新知识，所以打算在这里分享一些自己学到的东西顺便检验一下自己学习的承兑，写总结和心得体会。&lt;/p&gt;
+&lt;p&gt;最后分享一句最近感受颇深的一句话吧。&lt;/p&gt;
+&lt;p&gt;知止而后定，定而后能静，静儿后能安，安而后能虑，虑而后能得。物有本末，事有始终。知所先后，则近道矣–【大学】&lt;/p&gt;
+&lt;p&gt;以此共勉&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这个blog终于被搭建起来了，竟然还有种莫名的兴奋感，这是我建立的第二个独立博客了，第一次搭建还是在读大学的时候，虽然那个时候blog已经不是很流行了，但是本着折腾折腾的想法，还是租了一个域名，使用&lt;strong&gt;WordPress&lt;/strong&gt;博客程序尝试了一下。但是
+    
+    </summary>
+    
+    
+      <category term="第一篇 Blog  博客" scheme="http://alcret.github.io/tags/%E7%AC%AC%E4%B8%80%E7%AF%87-Blog-%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用GitHub和Hexo搭建Blog系列一——安装</title>
+    <link href="http://alcret.github.io/2016/08/03/tags-%20GitHub%20Blog%20%20Hexo/"/>
+    <id>http://alcret.github.io/2016/08/03/tags- GitHub Blog  Hexo/</id>
+    <published>2016-08-03T09:41:50.000Z</published>
+    <updated>2016-08-04T06:55:55.529Z</updated>
+    
+    <content type="html">&lt;p&gt;##1、准备工作&lt;br&gt;注意：由于本人还没使用过其他平台，所以本文目前只针对&lt;strong&gt;Windows平台&lt;/strong&gt;，其他平台有待更新。&lt;/p&gt;
+&lt;p&gt;###1.1安装Git&lt;br&gt;安装方式方法网上很多教程，此处不再赘述。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;###1.2安装Node.JS&lt;br&gt;配置好GitHub目录后，在Git shell中输入npm命令安装&lt;br&gt;&lt;figure class=&quot;highlight dos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-cli -g&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo --save&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;###1.3  Hexo初始化&lt;br&gt;安装完成后要进行Hexo的初始化操作&lt;/p&gt;
+&lt;p&gt;####1.3.1建立Hexo文件夹&lt;br&gt;根据实际情况建立文件目录（如F:\Blog），启动Git Shell并切换到该路径下，执行一下指令：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;hexo init                       #在文件夹下此命令生成所需文件&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;cd &amp;lt;folder&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;操作结束后，目录如下：&lt;br&gt;&lt;figure class=&quot;highlight cmd&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;├── _config.yml&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;├── package.json&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;├── scaffolds&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;├── scripts&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;├── source&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;|      ├── _drafts&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;|      └── _posts&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;└── themes&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;####1.3.2Hexo插件的安装&lt;br&gt;&lt;figure class=&quot;highlight dos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-generator-index --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-generator-archive --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-generator-category --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-generator-tag --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-server --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-deployer-git --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-deployer-heroku --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-deployer-rsync --save  &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-deployer-openshift --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-renderer-marked@&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;.&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-renderer-stylus@&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;.&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-generator-feed@&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-generator-sitemap@&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; --save&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;至此，Hexo安装部署的工作基本已经完成了，下面就是要查看一下本地效果了&lt;/p&gt;
+&lt;p&gt;执行如下指令查看&lt;br&gt;&lt;figure class=&quot;highlight dos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;hexo s&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;成功后在本地浏览器地址栏中输入localhost:4000&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;1.4总结&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1.安装github   #这个下节会用到&lt;br&gt;2安装Node.JS&lt;br&gt;3.建立Hexo文件夹并初始化&lt;br&gt;4.安装插件&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;下期预告：github的使用&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;##1、准备工作&lt;br&gt;注意：由于本人还没使用过其他平台，所以本文目前只针对&lt;strong&gt;Windows平台&lt;/strong&gt;，其他平台有待更新。&lt;/p&gt;
+&lt;p&gt;###1.1安装Git&lt;br&gt;安装方式方法网上很多教程，此处不再赘述。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;###1.2安
+    
+    </summary>
+    
+    
+      <category term="GitHub Blog  Hexo" scheme="http://alcret.github.io/tags/GitHub-Blog-Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://alcret.github.io/2016/07/04/hello-world/"/>
+    <id>http://alcret.github.io/2016/07/04/hello-world/</id>
+    <published>2016-07-04T10:21:18.872Z</published>
+    <updated>2016-07-04T10:21:18.872Z</updated>
+    
+    <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo server&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo generate&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo deploy&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+</content>
     
     <summary type="html">
     
