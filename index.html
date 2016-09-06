@@ -124,6 +124,16 @@
 
 
 
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?691fdeaa7754791cee7d0b024a3afeab";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
 
 
 
@@ -388,127 +398,6 @@
             
               
                 
-                <a class="post-title-link" href="/2016/08/03/usegit/" itemprop="url">
-                  使用GitHub和Hexo搭建Blog系列二——安装
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-03T17:41:50+08:00" content="2016-08-03">
-              2016-08-03
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Install/" itemprop="url" rel="index">
-                    <span itemprop="name">Install</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="1、使用GitHub"><a href="#1、使用GitHub" class="headerlink" title="1、使用GitHub"></a>1、使用GitHub</h2><p>直接略过github的介绍、安装和注册吧，网上的教程一大堆到处都可以搜到。</p>
-<h2 id="2、配置SSH"><a href="#2、配置SSH" class="headerlink" title="2、配置SSH"></a>2、配置SSH</h2><p>在和github通信时需要先配置好SSH，不然是无法上传的。</p>
-<h3 id="2-1-准备"><a href="#2-1-准备" class="headerlink" title="2.1 准备"></a>2.1 准备</h3><p>在配置SSH前需要先检查下本机是否已经存在ssh key，在Git Bash输入如下命令，即可检查是否存在。<br><figure class="highlight dos"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ls -al ~/.ssh</div></pre></td></tr></table></figure></p>
-<h3 id="3、注册github"><a href="#3、注册github" class="headerlink" title="3、注册github"></a>3、注册github</h3><p>1.登陆Github，注册用户<br>2.点击New Repository，创建新库，name如alcret. github.io<br>3.创建完毕以后进入查看</p>
-<h3 id="4、同步"><a href="#4、同步" class="headerlink" title="4、同步"></a>4、同步</h3><p>将内容同步至github<br>1.可以下载github Windows，也可以使用命令行（推荐下载）<br>2.设置local path<br>3.运行git shell切换至设置的local path路径下<br>4.在Hexo博客文件夹根目录执行hexo g，会生成public文件夹<br>5.将public文件夹内全部内容复制至local path目录下<br>6.运行github确认信息后，执行同步<br>7.观察主页效果</p>
-<h3 id="5、常用git命令"><a href="#5、常用git命令" class="headerlink" title="5、常用git命令"></a>5、常用git命令</h3><p>clone the repository</p>
-<figure class="highlight dos"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~ $ git clone https://github.com/username/username.github.io</div></pre></td></tr></table></figure>
-<p>Push it</p>
-<figure class="highlight dos"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">~ $ git add  --all</div><div class="line">~ $ git commit -m "Initial commit"</div><div class="line">~ $ git push -u origin master</div></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
                 <a class="post-title-link" href="/2016/08/01/title- firstblog/" itemprop="url">
                   平凡之路两年了，你走到了哪里了
                 </a>
@@ -648,7 +537,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
