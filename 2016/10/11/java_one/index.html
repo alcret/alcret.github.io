@@ -1,0 +1,920 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="java blog," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="这次打算写一系列的学习过程，从java开始。
+
+
+java纯软件运行不涉及到硬件层面
+jdk：java的软件开发工具包，包含java的运行环境
+jit：解释器，just in time 及时编译
+
+
+
+环境变量平台：为应用程序运行提供软件或硬件环境，java平台单纯指软件环境jdk目录：
+
+
+bin：运行相关工具
+db：数据库文件
+include：非java的本地实现
+jre：运行环境（包含JVM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="初学java（一）">
+<meta property="og:url" content="http://yoursite.com/2016/10/11/java_one/index.html">
+<meta property="og:site_name" content="冰之原野">
+<meta property="og:description" content="这次打算写一系列的学习过程，从java开始。
+
+
+java纯软件运行不涉及到硬件层面
+jdk：java的软件开发工具包，包含java的运行环境
+jit：解释器，just in time 及时编译
+
+
+
+环境变量平台：为应用程序运行提供软件或硬件环境，java平台单纯指软件环境jdk目录：
+
+
+bin：运行相关工具
+db：数据库文件
+include：非java的本地实现
+jre：运行环境（包含JVM">
+<meta property="og:updated_time" content="2017-03-04T15:05:35.966Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="初学java（一）">
+<meta name="twitter:description" content="这次打算写一系列的学习过程，从java开始。
+
+
+java纯软件运行不涉及到硬件层面
+jdk：java的软件开发工具包，包含java的运行环境
+jit：解释器，just in time 及时编译
+
+
+
+环境变量平台：为应用程序运行提供软件或硬件环境，java平台单纯指软件环境jdk目录：
+
+
+bin：运行相关工具
+db：数据库文件
+include：非java的本地实现
+jre：运行环境（包含JVM">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/10/11/java_one/"/>
+
+  <title> 初学java（一） | 冰之原野 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">冰之原野</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                初学java（一）
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-11T11:00:04+08:00" content="2016-10-11">
+              2016-10-11
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Live/" itemprop="url" rel="index">
+                    <span itemprop="name">Live</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>这次打算写一系列的学习过程，从java开始。</p>
+<blockquote>
+<ul>
+<li>java纯软件运行不涉及到硬件层面</li>
+<li>jdk：java的软件开发工具包，包含java的运行环境</li>
+<li>jit：解释器，just in time 及时编译</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h2><p>平台：为应用程序运行提供软件或硬件环境，java平台单纯指软件环境<br>jdk目录：</p>
+<blockquote>
+<ul>
+<li>bin：运行相关工具</li>
+<li>db：数据库文件</li>
+<li>include：非java的本地实现</li>
+<li>jre：运行环境（包含JVM）</li>
+<li>src.zip：源代码（类库提供的）</li>
+</ul>
+</blockquote>
+<p>javap：反编译指令<br>javadoc：文档生成器，生成文档<br>命令事例：javadoc -d doc commont.java c:\</p>
+<p>字节码文件与类名一致（有多少个类名就对应多少个字节码文件）运行所需要的字节码文件即可</p>
+<h2 id="一、注释、标识符、变量和数据类型"><a href="#一、注释、标识符、变量和数据类型" class="headerlink" title="一、注释、标识符、变量和数据类型"></a>一、注释、标识符、变量和数据类型</h2><h3 id="1、-注释"><a href="#1、-注释" class="headerlink" title="1、 注释"></a>1、 注释</h3><h4 id="1-1注释的作用："><a href="#1-1注释的作用：" class="headerlink" title="1.1注释的作用："></a>1.1注释的作用：</h4><p>生成文档<br>提高代码可读性</p>
+<h4 id="1-2注释类型"><a href="#1-2注释类型" class="headerlink" title="1.2注释类型"></a>1.2注释类型</h4><p>一共有三种注释<br>1.单行注释  // 注释内容<br>2.多行注释  // 注释内容（多行注释不支持嵌套）<br>3.文档注释  /*注释内容*/</p>
+<h3 id="2、标识符"><a href="#2、标识符" class="headerlink" title="2、标识符"></a>2、标识符</h3><p>标识（zhi）符是指代有意义的符号，一般有以下规则：</p>
+<blockquote>
+<ul>
+<li>由字符、数字、下划线及货币符号组成，但首字符不能为数字。</li>
+<li>不与java中关键字重名。</li>
+<li>不与java中字面常量重名(null、true、false)<br>注意：标识符是区分大小写的。</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="3、变量"><a href="#3、变量" class="headerlink" title="3、变量"></a>3、变量</h3><p>变量：在程序运行中，其值是可以改变的量，对应于内存中的一个存储单元。<br>构成：类型  名称    值<br>变量的作用范围： 对应于变量的作用域，指变量的有效区域。</p>
+<blockquote>
+<ul>
+<li>成员变量：作用域为整个类（在类的内部直接声明）</li>
+<li>局部变量：从局部变量声明位置开始，到所在最小语句块结束，且局部变量作用域之间无交集可以重命名。</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="4、数据类型"><a href="#4、数据类型" class="headerlink" title="4、数据类型"></a>4、数据类型</h3><blockquote>
+<ul>
+<li>基本数据类型（可以直接使用）</li>
+<li>引用数据类型（需要事先声明）</li>
+</ul>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">基本数据类型</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">字节</th>
+<th style="text-align:center">范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">boolean</td>
+<td style="text-align:center">布尔型</td>
+<td style="text-align:center">未规具体占多少空间</td>
+<td style="text-align:center">仅true或false两个值，其他任何值均非法</td>
+</tr>
+<tr>
+<td style="text-align:center">byte</td>
+<td style="text-align:center">整数类型</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">-2^7 ~ 2^7-1</td>
+</tr>
+<tr>
+<td style="text-align:center">short</td>
+<td style="text-align:center">整数类型</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">-2^15 ~ 2^15-1</td>
+</tr>
+<tr>
+<td style="text-align:center">int</td>
+<td style="text-align:center">整数类型</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">-2^31 ~ 2^31-1</td>
+</tr>
+<tr>
+<td style="text-align:center">long</td>
+<td style="text-align:center">整数类型</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">-2^63 ~ 2^63-1</td>
+</tr>
+<tr>
+<td style="text-align:center">float</td>
+<td style="text-align:center">浮点类型</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">单精度(10^-38 ~ 10^38和-10^-38 ~ -10^38 )忽略</td>
+</tr>
+<tr>
+<td style="text-align:center">double</td>
+<td style="text-align:center">浮点类型</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">双精度 (10^-308~10^308和-10^-308~-10^308)忽略</td>
+</tr>
+<tr>
+<td style="text-align:center">char</td>
+<td style="text-align:center">字符类型</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">0 ~ 2^16-1</td>
+</tr>
+</tbody>
+</table>
+<p>使用整形应该注意的：</p>
+<blockquote>
+<ul>
+<li>在做整数运算的时候，要留心可能的最大整数，检查中间结果溢出。</li>
+</ul>
+</blockquote>
+<p>使用浮点数应遵循的原则：</p>
+<blockquote>
+<ul>
+<li>避免数量级相差巨大的数之间的加减运算</li>
+<li>避免等量判断</li>
+</ul>
+</blockquote>
+<h3 id="5、转义序列"><a href="#5、转义序列" class="headerlink" title="5、转义序列"></a>5、转义序列</h3><blockquote>
+<ul>
+<li>八进制转义（\0~\377表示十进制0~255）</li>
+<li>Unicode转义（\u0000~\uffff）</li>
+<li>转义字符</li>
+</ul>
+</blockquote>
+<h4 id="5-1-转义字符"><a href="#5-1-转义字符" class="headerlink" title="5.1 转义字符"></a>5.1 转义字符</h4><table>
+<thead>
+<tr>
+<th>字符</th>
+<th>表示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\b</td>
+<td>退格符</td>
+</tr>
+<tr>
+<td>\r</td>
+<td>回车符</td>
+</tr>
+<tr>
+<td>\’ 单引号’</td>
+<td>单引号</td>
+</tr>
+<tr>
+<td>\” 双引号 “</td>
+<td>双引号</td>
+</tr>
+<tr>
+<td>\n</td>
+<td>换行符</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>制表符</td>
+</tr>
+<tr>
+<td>\f</td>
+<td>换页符</td>
+</tr>
+<tr>
+<td>\\ 反斜杠\</td>
+<td>反斜杠</td>
+</tr>
+</tbody>
+</table>
+<p><strong>为什么要使用转义序列？</strong></p>
+<blockquote>
+<ul>
+<li>某些字符在java中已经有了特殊的含义（例如”，’等）</li>
+<li>某些字符不方便通过键盘输入</li>
+</ul>
+</blockquote>
+<p><strong>转义序列的区别</strong></p>
+<blockquote>
+<ul>
+<li>Unicode转义的处理时间要早于八进制转义与转义字符，并且早于编译器丢弃空白注释之前，\u后面必须要跟4个合理的十六进制数值</li>
+<li>转义序列不会再参与进一步转义</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="二、-进制、数据类型转换"><a href="#二、-进制、数据类型转换" class="headerlink" title="二、 进制、数据类型转换"></a>二、 进制、数据类型转换</h2><h3 id="1、进制"><a href="#1、进制" class="headerlink" title="1、进制"></a>1、进制</h3><p>java支持四种进制</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">进制</th>
+<th style="text-align:center">前缀</th>
+<th style="text-align:center">注意</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">二进制</td>
+<td style="text-align:center">0b或0B</td>
+</tr>
+<tr>
+<td style="text-align:center">八进制</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">十进制</td>
+</tr>
+<tr>
+<td style="text-align:center">十六进制</td>
+<td style="text-align:center">0x或0X</td>
+<td style="text-align:center">10~15用a~f表示</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2、数据类型低-gt-高"><a href="#2、数据类型低-gt-高" class="headerlink" title="2、数据类型低-&gt;高"></a>2、数据类型低-&gt;高</h4><p>byte -&gt; short -&gt; int -&gt; long -&gt; float -&gt; double<br>char类型低于int类型取值与byte、short类型重叠，不分高低。boolean类型只能与本类型进行运算而不可以与其他类型。</p>
+<h4 id="3、数据类型转换："><a href="#3、数据类型转换：" class="headerlink" title="3、数据类型转换："></a>3、数据类型转换：</h4><blockquote>
+<ul>
+<li>自动转换：目标类型比源类型更高时自动完成 低 -&gt; 高</li>
+<li>强制转换：目标类型比源类型更低时需要强制完成，使用类型转换符（目标类型） 高 -&gt; 低</li>
+</ul>
+</blockquote>
+<h4 id="4、类型提升"><a href="#4、类型提升" class="headerlink" title="4、类型提升"></a>4、类型提升</h4><p>原则：</p>
+<blockquote>
+<ul>
+<li>byte、short、char提升为int类型</li>
+<li>表达式的结果类型与参与运算的操作数最高类型一致（基于上一条）</li>
+</ul>
+</blockquote>
+<h4 id="5、运算符"><a href="#5、运算符" class="headerlink" title="5、运算符"></a>5、运算符</h4><h5 id="5-1、算数运算符"><a href="#5-1、算数运算符" class="headerlink" title="5.1、算数运算符"></a>5.1、算数运算符</h5><blockquote>
+<ul>
+<li>取余数运算，余数的符号与被除数一致</li>
+</ul>
+</blockquote>
+<h4 id="5-2、三元运算符"><a href="#5-2、三元运算符" class="headerlink" title="5.2、三元运算符"></a>5.2、三元运算符</h4><p>?:<br>判断表达式1 ?   判断表达式2 :   判断表达式3<br>若判断表达式1为true则返回表达式2的值，否则返回表达式3的值</p>
+<h4 id="5-3、移位运算符"><a href="#5-3、移位运算符" class="headerlink" title="5.3、移位运算符"></a>5.3、移位运算符</h4><h5 id="5-3-1、移运算符"><a href="#5-3-1、移运算符" class="headerlink" title="5.3.1、移运算符"></a>5.3.1、移运算符</h5><blockquote>
+<ul>
+<li>左移运算符：将左侧操作数向左移动右侧操作数指定的位数，右侧以0进行填充。 x &lt;&lt; 1</li>
+<li>右移运算符：将左侧操作数向右移动右侧操作数指定的位数，左侧以符号位进行填充。 x &gt;&gt; 1</li>
+<li>无符号右移运算符：将左侧操作数向右移动右侧操作数指定的位数，左侧以0进行填充。   x &gt;&gt;&gt; 1</li>
+</ul>
+</blockquote>
+<h4 id="5-4、-与–运算"><a href="#5-4、-与–运算" class="headerlink" title="5.4、++与–运算"></a>5.4、++与–运算</h4><h4 id="6、注意"><a href="#6、注意" class="headerlink" title="6、注意"></a>6、注意</h4><blockquote>
+<ul>
+<li>char类型无论中英文一律占两个字节</li>
+<li>做除法取整时，向0取整</li>
+<li>浮点类型存储近似值，并不精确</li>
+<li>byte、short与char类型转换时必须强制转换（因无类型高低）</li>
+<li>必须要有运算符才算参与了运算，赋值号并不算运算符（例b = -b参与了运算）</li>
+<li>当数值位数过多时，可以用_进行分割，且必须存在于数字之间</li>
+<li>字面常量int类型表示long类型时，要时候l或L后缀，建议大写</li>
+<li>double -&gt; float类型要使用f或F后缀</li>
+<li>科学计数法用e</li>
+<li>p表示以2为底的计数法，且必须是十六进制（例：f = 0x1.2p6f）</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="三、-数组、多维数组"><a href="#三、-数组、多维数组" class="headerlink" title="三、    数组、多维数组"></a>三、    数组、多维数组</h3><p>1、数组：相同类型数据的集合，每存在一种类型就会存在一种对应的数组类型，byte[]形式，类型与变量进行有效的分离，数组类型为引用类型。</p>
+<p>2、数组的初始化<br>(1) int[] age = {10,20,30}<br>(2) int[] age = new int[] {10,20,30}<br>(3) int[] age = new int[3]</p>
+<p>区别：</p>
+<blockquote>
+<ul>
+<li>第一种只能在声明的时候初始化</li>
+<li>后两种可以在声明之后初始化</li>
+</ul>
+</blockquote>
+<h4 id="3、元素访问"><a href="#3、元素访问" class="headerlink" title="3、元素访问"></a>3、元素访问</h4><p>元素的访问通过 数组名与下标的方式访问，数组名[]，索引从0开始。<br>length属性可以获取数组的长度（可用于遍历），例age.length</p>
+<h4 id="3-1、数组越界："><a href="#3-1、数组越界：" class="headerlink" title="3.1、数组越界："></a>3.1、数组越界：</h4><p>访问的数组元素，若提供的索引值<0，或者>=数组的长度（length），会发生数组越界（编译没错，运行时产生异常）。</0，或者></p>
+<h4 id="4、局部变量在堆内存"><a href="#4、局部变量在堆内存" class="headerlink" title="4、局部变量在堆内存"></a>4、局部变量在堆内存</h4><blockquote>
+<ul>
+<li>栈内存存放地址，空间有限，随着方法的调用而创建，结束后被销毁</li>
+<li>堆内存，存储具体对象，长期存储，随着虚拟机的启动而创建</li>
+</ul>
+</blockquote>
+<h4 id="5、多维数组"><a href="#5、多维数组" class="headerlink" title="5、多维数组"></a>5、多维数组</h4><p>最多只有255组（1个字节保存数组的维数）<br>n维数组，每个元素类型为（n-1）维数组类型相同<br>初始化同一维数组</p>
+<h2 id="预告：关于java中不存在指针又到处是指针的问题"><a href="#预告：关于java中不存在指针又到处是指针的问题" class="headerlink" title="预告：关于java中不存在指针又到处是指针的问题"></a>预告：关于java中不存在指针又到处是指针的问题</h2>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/java-blog/" rel="tag">#java blog</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/03/hexo-first/" rel="next" title="使用GitHub和Hexo搭建Blog系列一——安装">
+                <i class="fa fa-chevron-left"></i> 使用GitHub和Hexo搭建Blog系列一——安装
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/31/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/source/images/"
+               alt="张闯" />
+          <p class="site-author-name" itemprop="name">张闯</p>
+          <p class="site-description motion-element" itemprop="description">Just do it ！！！</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境变量"><span class="nav-number">1.</span> <span class="nav-text">环境变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一、注释、标识符、变量和数据类型"><span class="nav-number">2.</span> <span class="nav-text">一、注释、标识符、变量和数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、-注释"><span class="nav-number">2.1.</span> <span class="nav-text">1、 注释</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1注释的作用："><span class="nav-number">2.1.1.</span> <span class="nav-text">1.1注释的作用：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2注释类型"><span class="nav-number">2.1.2.</span> <span class="nav-text">1.2注释类型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、标识符"><span class="nav-number">2.2.</span> <span class="nav-text">2、标识符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、变量"><span class="nav-number">2.3.</span> <span class="nav-text">3、变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、数据类型"><span class="nav-number">2.4.</span> <span class="nav-text">4、数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5、转义序列"><span class="nav-number">2.5.</span> <span class="nav-text">5、转义序列</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-1-转义字符"><span class="nav-number">2.5.1.</span> <span class="nav-text">5.1 转义字符</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、-进制、数据类型转换"><span class="nav-number">3.</span> <span class="nav-text">二、 进制、数据类型转换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、进制"><span class="nav-number">3.1.</span> <span class="nav-text">1、进制</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2、数据类型低-gt-高"><span class="nav-number">3.1.1.</span> <span class="nav-text">2、数据类型低->高</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、数据类型转换："><span class="nav-number">3.1.2.</span> <span class="nav-text">3、数据类型转换：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、类型提升"><span class="nav-number">3.1.3.</span> <span class="nav-text">4、类型提升</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、运算符"><span class="nav-number">3.1.4.</span> <span class="nav-text">5、运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#5-1、算数运算符"><span class="nav-number">3.1.4.1.</span> <span class="nav-text">5.1、算数运算符</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-2、三元运算符"><span class="nav-number">3.1.5.</span> <span class="nav-text">5.2、三元运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-3、移位运算符"><span class="nav-number">3.1.6.</span> <span class="nav-text">5.3、移位运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#5-3-1、移运算符"><span class="nav-number">3.1.6.1.</span> <span class="nav-text">5.3.1、移运算符</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-4、-与–运算"><span class="nav-number">3.1.7.</span> <span class="nav-text">5.4、++与–运算</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6、注意"><span class="nav-number">3.1.8.</span> <span class="nav-text">6、注意</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、-数组、多维数组"><span class="nav-number">3.2.</span> <span class="nav-text">三、    数组、多维数组</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3、元素访问"><span class="nav-number">3.2.1.</span> <span class="nav-text">3、元素访问</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1、数组越界："><span class="nav-number">3.2.2.</span> <span class="nav-text">3.1、数组越界：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、局部变量在堆内存"><span class="nav-number">3.2.3.</span> <span class="nav-text">4、局部变量在堆内存</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、多维数组"><span class="nav-number">3.2.4.</span> <span class="nav-text">5、多维数组</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#预告：关于java中不存在指针又到处是指针的问题"><span class="nav-number">4.</span> <span class="nav-text">预告：关于java中不存在指针又到处是指针的问题</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">张闯</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
