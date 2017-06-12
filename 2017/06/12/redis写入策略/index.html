@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Redis Blog 大数据," />
 
 
 
@@ -87,15 +87,46 @@
 
 
 
-<meta name="description" content="Just do it ！！！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="冰之原野">
-<meta property="og:url" content="http://yoursite.com/archives/2016/10/index.html">
+<meta name="description" content="#控制redis中list长度由于list适合作为消息队列，但是官方并没有给出对单个元素设置失效的时长，所以要想办法将list长度控制在一个范围，否则内存溢出。
+##方案一利用redisAPI的两个方法
+利用命令
+LSET ListKey index &amp;quot;sign&amp;quot;
+LREM ListKey 0 &amp;quot;sign&amp;quot;
+
+###1.首先解释下两个命令
+
+LSET
+
+1L">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Redis写入策略">
+<meta property="og:url" content="http://yoursite.com/2017/06/12/redis写入策略/index.html">
 <meta property="og:site_name" content="冰之原野">
-<meta property="og:description" content="Just do it ！！！">
+<meta property="og:description" content="#控制redis中list长度由于list适合作为消息队列，但是官方并没有给出对单个元素设置失效的时长，所以要想办法将list长度控制在一个范围，否则内存溢出。
+##方案一利用redisAPI的两个方法
+利用命令
+LSET ListKey index &amp;quot;sign&amp;quot;
+LREM ListKey 0 &amp;quot;sign&amp;quot;
+
+###1.首先解释下两个命令
+
+LSET
+
+1L">
+<meta property="og:updated_time" content="2017-06-12T13:24:59.367Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="冰之原野">
-<meta name="twitter:description" content="Just do it ！！！">
+<meta name="twitter:title" content="Redis写入策略">
+<meta name="twitter:description" content="#控制redis中list长度由于list适合作为消息队列，但是官方并没有给出对单个元素设置失效的时长，所以要想办法将list长度控制在一个范围，否则内存溢出。
+##方案一利用redisAPI的两个方法
+利用命令
+LSET ListKey index &amp;quot;sign&amp;quot;
+LREM ListKey 0 &amp;quot;sign&amp;quot;
+
+###1.首先解释下两个命令
+
+LSET
+
+1L">
 
 
 
@@ -123,13 +154,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2016/10/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/06/12/redis写入策略/"/>
 
 
 
 
 
-  <title> 归档 | 冰之原野 </title>
+  <title> Redis写入策略 | 冰之原野 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -163,7 +194,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -267,66 +298,221 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 7 篇日志。 继续努力。
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/12/redis写入策略/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="张闯">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="冰之原野">
     </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Redis写入策略
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-12T20:41:50+08:00">
+                2017-06-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Big-Data/" itemprop="url" rel="index">
+                    <span itemprop="name">Big_Data</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/06/12/redis写入策略/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/06/12/redis写入策略/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
 
       
       
-      
 
+      
+        <p>#控制redis中list长度<br>由于list适合作为消息队列，但是官方并没有给出对单个元素设置失效的时长，所以要想办法将list长度控制在一个范围，否则内存溢出。</p>
+<p>##方案一<br>利用redisAPI的两个方法</p>
+<p>利用命令</p>
+<pre><code>LSET ListKey index &quot;sign&quot;
+LREM ListKey 0 &quot;sign&quot;
+</code></pre><hr>
+<p>###1.首先解释下两个命令</p>
+<ul>
+<li>LSET</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">LSET key index value</div></pre></td></tr></table></figure>
+<p>官方给出的解释是：</p>
+<p> 设置index位置list元素的值为value，并且当index超出范围时会返回一个error</p>
+<p>返回值simple-String-reply</p>
+<p>Simple Strings：</p>
+<p>类型解释：状态回复（或单行回复）以”+”开始以”\r\n”结尾的单行字符串形式，如”+OK\r\n”</p>
+<ul>
+<li>LREM</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">LREM key count value</div></pre></td></tr></table></figure>
+<p>解释：</p>
+<p>从存于key的列表中移除前count次出现值为value的元素，count参数有如下形式影响此操作：</p>
+<blockquote>
+<p>count &gt; 0:从头往尾移除值为value的元素</p>
+<p>count &lt; 0:从尾往头移除值为value的元素</p>
+<p>count = 0:移除所有值为value的元素</p>
+</blockquote>
+<p>返回值:integer-reply:被移除元素个数</p>
+<hr>
+<p>###2.实现策略<br>计数器num</p>
+<pre><code>if(num&gt;=100) {
+    jedis.lset(&quot;test&quot;,num,&quot;delete&quot;)
+    jedis.lrem(&quot;test&quot;,num,&quot;delete&quot;)
+    num = 99;
+}
+num++;
+</code></pre><p>说明：将每个新的元素插入到列表的头部，当list长度达到100时就会进入分支，将第100个元素标记为”delete”，然后即时删除。这样循环的list始终是100长度。</p>
+<hr>
+<p>##方案二</p>
+<p>设置判断，当达到一定长度后将切换另一个list开始写入，间隔一段时间后删除此key。比较好实现，但是难以控制事务的一致性。</p>
+
+      
+    </div>
+
+    <div>
       
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Redis-Blog-大数据/" rel="tag"># Redis Blog 大数据</a>
+          
         </div>
       
+
+      
+        
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/04/03/book/" rel="next" title="如何阅读一本书">
+                <i class="fa fa-chevron-left"></i> 如何阅读一本书
+              </a>
+            
+          </div>
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          <span class="post-nav-divider"></span>
 
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/10/11/java_one/" itemprop="url">
-              
-                <span itemprop="name">初学java（一）</span>
-              
-            </a>
-        
-      </h1>
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-10-11T11:00:04+08:00"
-              content="2016-10-11" >
-          10-11
-        </time>
-      </div>
-
-    </header>
+      
+      
+    </footer>
   </article>
 
 
 
-    
-
-  </section>
-
-  
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
           
           </div>
@@ -334,6 +520,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/06/12/redis写入策略/"
+           data-title="Redis写入策略" data-url="http://yoursite.com/2017/06/12/redis写入策略/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -544,11 +738,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
 
 
   
