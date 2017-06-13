@@ -388,17 +388,14 @@
       
         
           
-            <p>#控制redis中list长度<br>由于list适合作为消息队列，但是官方并没有给出对单个元素设置失效的时长，所以要想办法将list长度控制在一个范围，否则内存溢出。</p>
-<p>##方案一<br>利用redisAPI的两个方法</p>
-<p>利用命令</p>
-<pre><code>LSET ListKey index &quot;sign&quot;
-LREM ListKey 0 &quot;sign&quot;
-</code></pre><hr>
-<p>###1.首先解释下两个命令</p>
-<ul>
+            <h1 id="控制redis中list长度"><a href="#控制redis中list长度" class="headerlink" title="控制redis中list长度"></a>控制redis中list长度</h1><p>由于list适合作为消息队列，但是官方并没有给出对单个元素设置失效的时长，所以要想办法将list长度控制在一个范围，否则内存溢出。</p>
+<h2 id="方案一"><a href="#方案一" class="headerlink" title="方案一"></a>方案一</h2><p>利用redisAPI的两个方法</p>
+<p>利用命令<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">LSET ListKey index <span class="string">"sign"</span></div><div class="line">LREM ListKey <span class="number">0</span> <span class="string">"sign"</span></div></pre></td></tr></table></figure></p>
+<hr>
+<h3 id="1-首先解释下两个命令"><a href="#1-首先解释下两个命令" class="headerlink" title="1.首先解释下两个命令"></a>1.首先解释下两个命令</h3><ul>
 <li>LSET</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">LSET key index value</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">LSET key index value</div></pre></td></tr></table></figure>
 <p>官方给出的解释是：</p>
 <p> 设置index位置list元素的值为value，并且当index超出范围时会返回一个error</p>
 <p>返回值simple-String-reply</p>
@@ -407,27 +404,18 @@ LREM ListKey 0 &quot;sign&quot;
 <ul>
 <li>LREM</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">LREM key count value</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">LREM key count value</div></pre></td></tr></table></figure>
 <p>解释：</p>
 <p>从存于key的列表中移除前count次出现值为value的元素，count参数有如下形式影响此操作：</p>
 <blockquote>
-<p>count &gt; 0:从头往尾移除值为value的元素</p>
-<p>count &lt; 0:从尾往头移除值为value的元素</p>
-<p>count = 0:移除所有值为value的元素</p>
+<p>count &gt; 0:从头往尾移除值为value的元素<br>count &lt; 0:从尾往头移除值为value的元素<br>count = 0:移除所有值为value的元素</p>
 </blockquote>
 <p>返回值:integer-reply:被移除元素个数</p>
 <hr>
-<p>###2.实现策略<br>计数器num</p>
-<pre><code>if(num&gt;=100) {
-    jedis.lset(&quot;test&quot;,num,&quot;delete&quot;)
-    jedis.lrem(&quot;test&quot;,num,&quot;delete&quot;)
-    num = 99;
-}
-num++;
-</code></pre><p>说明：将每个新的元素插入到列表的头部，当list长度达到100时就会进入分支，将第100个元素标记为”delete”，然后即时删除。这样循环的list始终是100长度。</p>
+<h3 id="2-实现策略"><a href="#2-实现策略" class="headerlink" title="2.实现策略"></a>2.实现策略</h3><p>计数器num<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(num&gt;=<span class="number">100</span>) &#123;</div><div class="line">	jedis.lset(<span class="string">"test"</span>,num,<span class="string">"delete"</span>)</div><div class="line">	jedis.lrem(<span class="string">"test"</span>,num,<span class="string">"delete"</span>)</div><div class="line">	num = <span class="number">99</span>;</div><div class="line">&#125;</div><div class="line">num++;</div></pre></td></tr></table></figure></p>
+<p>说明：将每个新的元素插入到列表的头部，当list长度达到100时就会进入分支，将第100个元素标记为”delete”，然后即时删除。这样循环的list始终是100长度。</p>
 <hr>
-<p>##方案二</p>
-<p>设置判断，当达到一定长度后将切换另一个list开始写入，间隔一段时间后删除此key。比较好实现，但是难以控制事务的一致性。</p>
+<h2 id="方案二"><a href="#方案二" class="headerlink" title="方案二"></a>方案二</h2><p>设置判断，当达到一定长度后将切换另一个list开始写入，间隔一段时间后删除此key。比较好实现，但是难以控制事务的一致性。</p>
 
           
         
