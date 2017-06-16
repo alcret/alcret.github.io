@@ -3,7 +3,7 @@
   
     
     <entry>
-      <title><![CDATA[Redis写入策略]]></title>
+      <title><![CDATA[Redis消息队列策略]]></title>
       <url>%2F2017%2F06%2F12%2Fredis%E5%86%99%E5%85%A5%E7%AD%96%E7%95%A5%2F</url>
       <content type="text"><![CDATA[控制redis中list长度由于list适合作为消息队列，但是官方并没有给出对单个元素设置失效的时长，所以要想办法将list长度控制在一个范围，否则内存溢出。 方案一利用redisAPI的两个方法 利用命令12LSET ListKey index "sign"LREM ListKey 0 "sign" 1.首先解释下两个命令 LSET 1LSET key index value 官方给出的解释是： 设置index位置list元素的值为value，并且当index超出范围时会返回一个error 返回值simple-String-reply Simple Strings： 类型解释：状态回复（或单行回复）以”+”开始以”\r\n”结尾的单行字符串形式，如”+OK\r\n” LREM 1LREM key count value 解释： 从存于key的列表中移除前count次出现值为value的元素，count参数有如下形式影响此操作： count &gt; 0:从头往尾移除值为value的元素count &lt; 0:从尾往头移除值为value的元素count = 0:移除所有值为value的元素 返回值:integer-reply:被移除元素个数 2.实现策略计数器num123456if(num&gt;=100) &#123; jedis.lset("test",num,"delete") jedis.lrem("test",num,"delete") num = 99;&#125;num++; 说明：将每个新的元素插入到列表的头部，当list长度达到100时就会进入分支，将第100个元素标记为”delete”，然后即时删除。这样循环的list始终是100长度。 方案二设置判断，当达到一定长度后将切换另一个list开始写入，间隔一段时间后删除此key。比较好实现，但是难以控制事务的一致性。]]></content>
     </entry>

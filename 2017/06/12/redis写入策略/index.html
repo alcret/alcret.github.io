@@ -97,7 +97,7 @@ LSET
 1LSET key index value
 官方给出的解释">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Redis写入策略">
+<meta property="og:title" content="Redis消息队列策略">
 <meta property="og:url" content="http://yoursite.com/2017/06/12/redis写入策略/index.html">
 <meta property="og:site_name" content="冰之原野">
 <meta property="og:description" content="控制redis中list长度由于list适合作为消息队列，但是官方并没有给出对单个元素设置失效的时长，所以要想办法将list长度控制在一个范围，否则内存溢出。
@@ -109,9 +109,9 @@ LSET
 
 1LSET key index value
 官方给出的解释">
-<meta property="og:updated_time" content="2017-06-13T12:54:50.384Z">
+<meta property="og:updated_time" content="2017-06-13T14:13:09.394Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Redis写入策略">
+<meta name="twitter:title" content="Redis消息队列策略">
 <meta name="twitter:description" content="控制redis中list长度由于list适合作为消息队列，但是官方并没有给出对单个元素设置失效的时长，所以要想办法将list长度控制在一个范围，否则内存溢出。
 方案一利用redisAPI的两个方法
 利用命令12LSET ListKey index &quot;sign&quot;LREM ListKey 0 &quot;sign&quot;
@@ -154,7 +154,7 @@ LSET
 
 
 
-  <title> Redis写入策略 | 冰之原野 </title>
+  <title> Redis消息队列策略 | 冰之原野 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -323,7 +323,7 @@ LSET
             
             
               
-                Redis写入策略
+                Redis消息队列策略
               
             
           </h1>
@@ -505,7 +505,7 @@ LSET
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2017/06/12/redis写入策略/"
-           data-title="Redis写入策略" data-url="http://yoursite.com/2017/06/12/redis写入策略/">
+           data-title="Redis消息队列策略" data-url="http://yoursite.com/2017/06/12/redis写入策略/">
       </div>
     
   </div>
