@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 
 
@@ -10,11 +10,19 @@
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
 
 
 
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
+
 
 
 
@@ -37,38 +45,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="java blog," />
@@ -80,68 +77,20 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
 
 
-
-
-
-
-<meta name="description" content="这次打算写一系列的学习过程，从java开始。
-
-
-java纯软件运行不涉及到硬件层面
-jdk：java的软件开发工具包，包含java的运行环境
-jit：解释器，just in time 及时编译
-
-
-
-环境变量平台：为应用程序运行提供软件或硬件环境，java平台单纯指软件环境jdk目录：
-
-
-bin：运行相关工具
-db：数据库文件
-include：非java的本地实现
-jre：运行环境（包含JVM">
+<meta name="description" content="这次打算写一系列的学习过程，从java开始。   java纯软件运行不涉及到硬件层面 jdk：java的软件开发工具包，包含java的运行环境 jit：解释器，just in time 及时编译    环境变量平台：为应用程序运行提供软件或硬件环境，java平台单纯指软件环境jdk目录：   bin：运行相关工具 db：数据库文件 include：非java的本地实现 jre：运行环境（包含JVM">
+<meta name="keywords" content="java blog">
 <meta property="og:type" content="article">
 <meta property="og:title" content="初学java（一）">
 <meta property="og:url" content="http://yoursite.com/2016/10/11/java_one/index.html">
-<meta property="og:site_name" content="冰之原野">
-<meta property="og:description" content="这次打算写一系列的学习过程，从java开始。
-
-
-java纯软件运行不涉及到硬件层面
-jdk：java的软件开发工具包，包含java的运行环境
-jit：解释器，just in time 及时编译
-
-
-
-环境变量平台：为应用程序运行提供软件或硬件环境，java平台单纯指软件环境jdk目录：
-
-
-bin：运行相关工具
-db：数据库文件
-include：非java的本地实现
-jre：运行环境（包含JVM">
-<meta property="og:updated_time" content="2017-03-04T15:05:35.966Z">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="这次打算写一系列的学习过程，从java开始。   java纯软件运行不涉及到硬件层面 jdk：java的软件开发工具包，包含java的运行环境 jit：解释器，just in time 及时编译    环境变量平台：为应用程序运行提供软件或硬件环境，java平台单纯指软件环境jdk目录：   bin：运行相关工具 db：数据库文件 include：非java的本地实现 jre：运行环境（包含JVM">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-03-04T15:05:35.967Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="初学java（一）">
-<meta name="twitter:description" content="这次打算写一系列的学习过程，从java开始。
-
-
-java纯软件运行不涉及到硬件层面
-jdk：java的软件开发工具包，包含java的运行环境
-jit：解释器，just in time 及时编译
-
-
-
-环境变量平台：为应用程序运行提供软件或硬件环境，java平台单纯指软件环境jdk目录：
-
-
-bin：运行相关工具
-db：数据库文件
-include：非java的本地实现
-jre：运行环境（包含JVM">
+<meta name="twitter:description" content="这次打算写一系列的学习过程，从java开始。   java纯软件运行不涉及到硬件层面 jdk：java的软件开发工具包，包含java的运行环境 jit：解释器，just in time 及时编译    环境变量平台：为应用程序运行提供软件或硬件环境，java平台单纯指软件环境jdk目录：   bin：运行相关工具 db：数据库文件 include：非java的本地实现 jre：运行环境（包含JVM">
 
 
 
@@ -150,12 +99,14 @@ jre：运行环境（包含JVM">
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
-    motion: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
-      userId: '779398',
-      author: 'Author'
+      userId: '0',
+      author: '博主'
     },
     algolia: {
       applicationID: '',
@@ -175,41 +126,26 @@ jre：运行环境（包含JVM">
 
 
 
-  <title> 初学java（一） | 冰之原野 </title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
+  <title>初学java（一） | Hexo</title>
   
 
 
 
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', '83686943-1', 'auto');
-  ga('send', 'pageview');
-</script>
 
 
 
 
+</head>
 
-
-
-
-
-
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
     
   
 
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -220,7 +156,7 @@ jre：运行环境（包含JVM">
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">冰之原野</span>
+        <span class="site-title">Hexo</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -255,18 +191,8 @@ jre：运行环境（包含JVM">
         </li>
       
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
+          <a href="/about/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
@@ -275,22 +201,32 @@ jre：运行环境（包含JVM">
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+          <a href="/tags/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
           </a>
         </li>
       
@@ -322,7 +258,11 @@ jre：运行环境（包含JVM">
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/10/11/java_one/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -332,7 +272,7 @@ jre：运行环境（包含JVM">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="冰之原野">
+      <meta itemprop="name" content="Hexo">
     </span>
 
     
@@ -340,14 +280,7 @@ jre：运行环境（包含JVM">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                初学java（一）
-              
-            
-          </h1>
+          <h1 class="post-title" itemprop="name headline">初学java（一）</h1>
         
 
         <div class="post-meta">
@@ -395,16 +328,6 @@ jre：运行环境（包含JVM">
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2016/10/11/java_one/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/11/java_one/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -420,7 +343,9 @@ jre：运行环境（包含JVM">
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -701,21 +626,15 @@ jre：运行环境（包含JVM">
 <h2 id="预告：关于java中不存在指针又到处是指针的问题"><a href="#预告：关于java中不存在指针又到处是指针的问题" class="headerlink" title="预告：关于java中不存在指针又到处是指针的问题"></a>预告：关于java中不存在指针又到处是指针的问题</h2>
       
     </div>
+    
+    
+    
 
-    <div>
-      
-        
+    
 
-      
-    </div>
+    
 
-    <div>
-      
-        
-
-      
-    </div>
-
+    
 
     <footer class="post-footer">
       
@@ -727,7 +646,7 @@ jre：运行环境（包含JVM">
       
 
       
-        
+      
       
 
       
@@ -744,8 +663,8 @@ jre：运行环境（包含JVM">
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/12/31/hello-world/" rel="prev" title="Hello World">
-                Hello World <i class="fa fa-chevron-right"></i>
+              <a href="/2017/01/22/list/" rel="prev" title="新年计划">
+                新年计划 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -755,6 +674,10 @@ jre：运行环境（包含JVM">
       
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -764,19 +687,15 @@ jre：运行环境（包含JVM">
     </div>
   </div>
 
-          
+
           </div>
           
 
 
           
-  <div class="comments" id="comments">
-    
-      <div class="ds-thread" data-thread-key="2016/10/11/java_one/"
-           data-title="初学java（一）" data-url="http://yoursite.com/2016/10/11/java_one/">
-      </div>
-    
-  </div>
+
+  
+
 
 
         </div>
@@ -792,99 +711,84 @@ jre：运行环境（包含JVM">
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
       
 
       
         <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
             文章目录
           </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
             站点概览
           </li>
         </ul>
       
 
-      <section class="site-overview sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/touxiang.jpg"
-               alt="张闯" />
-          <p class="site-author-name" itemprop="name">张闯</p>
-           
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/touxiang.jpg"
+                alt="张闯" />
+            
+              <p class="site-author-name" itemprop="name">张闯</p>
               <p class="site-description motion-element" itemprop="description">Life is a journey,not a race.</p>
-          
-        </div>
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
-              <a href="/archives">
-                <span class="site-state-item-count">7</span>
-                <span class="site-state-item-name">日志</span>
-              </a>
-            </div>
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-categories">
-              <a href="/categories/index.html">
-                <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">分类</span>
-              </a>
-            </div>
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">6</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-
-        <div class="links-of-author motion-element">
-          
-        </div>
-
-        
-        
-
-        
-        
-          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
-            <div class="links-of-blogroll-title">
-              <i class="fa  fa-fw fa-globe"></i>
-              Links
-            </div>
-            <ul class="links-of-blogroll-list">
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://blog.csdn.net/norhtstorm" title="菜根" target="_blank">菜根</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://blog.csdn.net/Li_yucHennn" title="菜逼" target="_blank">菜逼</a>
-                </li>
-              
-            </ul>
           </div>
-        
 
-        
+          <nav class="site-state motion-element">
 
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
       </section>
 
       
@@ -897,7 +801,7 @@ jre：运行环境（包含JVM">
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境变量"><span class="nav-number">1.</span> <span class="nav-text">环境变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一、注释、标识符、变量和数据类型"><span class="nav-number">2.</span> <span class="nav-text">一、注释、标识符、变量和数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、-注释"><span class="nav-number">2.1.</span> <span class="nav-text">1、 注释</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1注释的作用："><span class="nav-number">2.1.1.</span> <span class="nav-text">1.1注释的作用：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2注释类型"><span class="nav-number">2.1.2.</span> <span class="nav-text">1.2注释类型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、标识符"><span class="nav-number">2.2.</span> <span class="nav-text">2、标识符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、变量"><span class="nav-number">2.3.</span> <span class="nav-text">3、变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、数据类型"><span class="nav-number">2.4.</span> <span class="nav-text">4、数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5、转义序列"><span class="nav-number">2.5.</span> <span class="nav-text">5、转义序列</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-1-转义字符"><span class="nav-number">2.5.1.</span> <span class="nav-text">5.1 转义字符</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、-进制、数据类型转换"><span class="nav-number">3.</span> <span class="nav-text">二、 进制、数据类型转换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、进制"><span class="nav-number">3.1.</span> <span class="nav-text">1、进制</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2、数据类型低-gt-高"><span class="nav-number">3.1.1.</span> <span class="nav-text">2、数据类型低->高</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、数据类型转换："><span class="nav-number">3.1.2.</span> <span class="nav-text">3、数据类型转换：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、类型提升"><span class="nav-number">3.1.3.</span> <span class="nav-text">4、类型提升</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、运算符"><span class="nav-number">3.1.4.</span> <span class="nav-text">5、运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#5-1、算数运算符"><span class="nav-number">3.1.4.1.</span> <span class="nav-text">5.1、算数运算符</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-2、三元运算符"><span class="nav-number">3.1.5.</span> <span class="nav-text">5.2、三元运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-3、移位运算符"><span class="nav-number">3.1.6.</span> <span class="nav-text">5.3、移位运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#5-3-1、移运算符"><span class="nav-number">3.1.6.1.</span> <span class="nav-text">5.3.1、移运算符</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-4、-与–运算"><span class="nav-number">3.1.7.</span> <span class="nav-text">5.4、++与–运算</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6、注意"><span class="nav-number">3.1.8.</span> <span class="nav-text">6、注意</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、-数组、多维数组"><span class="nav-number">3.2.</span> <span class="nav-text">三、    数组、多维数组</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3、元素访问"><span class="nav-number">3.2.1.</span> <span class="nav-text">3、元素访问</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1、数组越界："><span class="nav-number">3.2.2.</span> <span class="nav-text">3.1、数组越界：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、局部变量在堆内存"><span class="nav-number">3.2.3.</span> <span class="nav-text">4、局部变量在堆内存</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、多维数组"><span class="nav-number">3.2.4.</span> <span class="nav-text">5、多维数组</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#预告：关于java中不存在指针又到处是指针的问题"><span class="nav-number">4.</span> <span class="nav-text">预告：关于java中不存在指针又到处是指针的问题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境变量"><span class="nav-number">1.</span> <span class="nav-text">环境变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一、注释、标识符、变量和数据类型"><span class="nav-number">2.</span> <span class="nav-text">一、注释、标识符、变量和数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、-注释"><span class="nav-number">2.1.</span> <span class="nav-text">1、 注释</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1注释的作用："><span class="nav-number">2.1.1.</span> <span class="nav-text">1.1注释的作用：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2注释类型"><span class="nav-number">2.1.2.</span> <span class="nav-text">1.2注释类型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、标识符"><span class="nav-number">2.2.</span> <span class="nav-text">2、标识符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、变量"><span class="nav-number">2.3.</span> <span class="nav-text">3、变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、数据类型"><span class="nav-number">2.4.</span> <span class="nav-text">4、数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5、转义序列"><span class="nav-number">2.5.</span> <span class="nav-text">5、转义序列</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-1-转义字符"><span class="nav-number">2.5.1.</span> <span class="nav-text">5.1 转义字符</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、-进制、数据类型转换"><span class="nav-number">3.</span> <span class="nav-text">二、 进制、数据类型转换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、进制"><span class="nav-number">3.1.</span> <span class="nav-text">1、进制</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2、数据类型低-gt-高"><span class="nav-number">3.1.1.</span> <span class="nav-text">2、数据类型低-&gt;高</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、数据类型转换："><span class="nav-number">3.1.2.</span> <span class="nav-text">3、数据类型转换：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、类型提升"><span class="nav-number">3.1.3.</span> <span class="nav-text">4、类型提升</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、运算符"><span class="nav-number">3.1.4.</span> <span class="nav-text">5、运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#5-1、算数运算符"><span class="nav-number">3.1.4.1.</span> <span class="nav-text">5.1、算数运算符</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-2、三元运算符"><span class="nav-number">3.1.5.</span> <span class="nav-text">5.2、三元运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-3、移位运算符"><span class="nav-number">3.1.6.</span> <span class="nav-text">5.3、移位运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#5-3-1、移运算符"><span class="nav-number">3.1.6.1.</span> <span class="nav-text">5.3.1、移运算符</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-4、-与–运算"><span class="nav-number">3.1.7.</span> <span class="nav-text">5.4、++与–运算</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6、注意"><span class="nav-number">3.1.8.</span> <span class="nav-text">6、注意</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、-数组、多维数组"><span class="nav-number">3.2.</span> <span class="nav-text">三、    数组、多维数组</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3、元素访问"><span class="nav-number">3.2.1.</span> <span class="nav-text">3、元素访问</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1、数组越界："><span class="nav-number">3.2.2.</span> <span class="nav-text">3.1、数组越界：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、局部变量在堆内存"><span class="nav-number">3.2.3.</span> <span class="nav-text">4、局部变量在堆内存</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、多维数组"><span class="nav-number">3.2.4.</span> <span class="nav-text">5、多维数组</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#预告：关于java中不存在指针又到处是指针的问题"><span class="nav-number">4.</span> <span class="nav-text">预告：关于java中不存在指针又到处是指针的问题</span></a></li></ol></div>
             
 
           </div>
@@ -917,30 +821,36 @@ jre：运行环境（包含JVM">
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">张闯</span>
+
+  
 </div>
 
 
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
-  </a>
-</div>
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
 
 
         
+
+
+
+
+
+
 
         
       </div>
@@ -952,7 +862,9 @@ jre：运行环境（包含JVM">
         
       </div>
     
+
     
+
   </div>
 
   
@@ -978,87 +890,6 @@ jre：运行环境（包含JVM">
 
 
 
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-  
-  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
-
-
-
-  
-
-  
-    
-  
-
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"http://wilbert.duoshuo.com"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-
-  
-    
-      
-      <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-      <script src="/js/src/hook-duoshuo.js?v=5.1.0"></script>
-    
-    
-    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-    <script src="/js/src/hook-duoshuo.js"></script>
-  
-
-
-
-
-
 
 
 
@@ -1069,6 +900,103 @@ jre：运行环境（包含JVM">
 
   
   
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
 
   
 
@@ -1077,7 +1005,11 @@ jre：运行环境（包含JVM">
   
 
   
+  
 
+  
+
+  
 
   
 
