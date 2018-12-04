@@ -2,14 +2,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<html class="theme-next mist use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 
 
@@ -20,8 +29,11 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -38,57 +50,33 @@
 
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
 
 
 
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+<link href="/css/main.css?v=6.6.0" rel="stylesheet" type="text/css">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.6.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/2764.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.6.0">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.6.0">
 
 
-
-
-
-  <meta name="keywords" content="Hexo, NexT" />
+  <link rel="mask-icon" href="/images/logo.svg?v=6.6.0" color="#222">
 
 
 
 
 
 
-
-
-
-
-<meta name="description" content="Life is a journey,not a race.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="闯的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="闯的博客">
-<meta property="og:description" content="Life is a journey,not a race.">
-<meta property="og:locale" content="zh-Hans">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="闯的博客">
-<meta name="twitter:description" content="Life is a journey,not a race.">
 
 
 
@@ -97,15 +85,13 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    version: '5.1.4',
+    version: '6.6.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -117,12 +103,36 @@
 </script>
 
 
-
-  <link rel="canonical" href="http://yoursite.com/"/>
-
+  
 
 
 
+
+  <meta name="description" content="Life is a journey,not a race.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="闯的博客">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="闯的博客">
+<meta property="og:description" content="Life is a journey,not a race.">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="闯的博客">
+<meta name="twitter:description" content="Life is a journey,not a race.">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/">
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
   <title>闯的博客</title>
   
@@ -134,9 +144,39 @@
 
 
 
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -147,25 +187,23 @@
   page-home">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">闯的博客</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -173,65 +211,106 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
+          
+          <li class="menu-item menu-item-home menu-item-active">
+
+    
+    
+    
       
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
       
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
 
       
+      
     </ul>
+  
+
+  
+    
+
   
 
   
@@ -239,12 +318,20 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
@@ -257,20 +344,22 @@
   
   
 
-  <article class="post post-type-Git" itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/01/Git Cheat Sheet/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/04/favorite-sentence/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张闯">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="Life is a journey,not a race.">
       <meta itemprop="image" content="/images/touxiang.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="闯的博客">
     </span>
 
@@ -281,11 +370,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/01/Git Cheat Sheet/" itemprop="url">Git Cheat Sheet</a></h1>
+                
+                <a href="/2018/12/04/favorite-sentence/" class="post-title-link" itemprop="http://yoursite.com/index.html">喜欢的句子</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -293,13 +391,316 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-01T23:21:53+08:00">
-                2018-05-01
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-12-04 16:28:47 / 修改时间：16:31:54" itemprop="dateCreated datePublished" datetime="2018-12-04T16:28:47+08:00">2018-12-04</time>
             
 
             
+              
 
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ol>
+<li>知止而后定，定而后能静，静儿后能安，安而后能虑，虑而后能得。物有本末，事有始终。知所先后，则近道矣、</li>
+</ol>
+<hr>
+<ol>
+<li>当你不再翻越规则，终会成为规则的囚徒</li>
+</ol>
+<hr>
+<ol>
+<li>尚未佩妥剑 转眼便江湖 愿历尽千帆 归来仍少年</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/03/hello-world/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="张闯">
+      <meta itemprop="description" content="Life is a journey,not a race.">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="闯的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/12/03/hello-world/" class="post-title-link" itemprop="http://yoursite.com/index.html">Hello World</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-12-03 14:25:00" itemprop="dateCreated datePublished" datetime="2018-12-03T14:25:00+08:00">2018-12-03</time>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-Git" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/01/Git Cheat Sheet/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="张闯">
+      <meta itemprop="description" content="Life is a journey,not a race.">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="闯的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/05/01/Git Cheat Sheet/" class="post-title-link" itemprop="http://yoursite.com/index.html">Git Cheat Sheet</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-05-01 23:21:53 / 修改时间：22:39:04" itemprop="dateCreated datePublished" datetime="2018-05-01T23:21:53+08:00">2018-05-01</time>
+            
+
+            
+              
+
+              
             
           </span>
 
@@ -342,12 +743,18 @@
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+       
+    
     
 
     
@@ -380,20 +787,22 @@
   
   
 
-  <article class="post post-type-Golang" itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-Golang" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/01/golang常用/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张闯">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="Life is a journey,not a race.">
       <meta itemprop="image" content="/images/touxiang.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="闯的博客">
     </span>
 
@@ -404,11 +813,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/01/golang常用/" itemprop="url">Golang</a></h1>
+                
+                <a href="/2018/05/01/golang常用/" class="post-title-link" itemprop="http://yoursite.com/index.html">Golang</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -416,13 +834,18 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-01T10:12:51+08:00">
-                2018-05-01
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-05-01 10:12:51 / 修改时间：22:40:10" itemprop="dateCreated datePublished" datetime="2018-05-01T10:12:51+08:00">2018-05-01</time>
             
 
             
+              
 
+              
             
           </span>
 
@@ -470,12 +893,18 @@
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+       
+    
     
 
     
@@ -508,20 +937,22 @@
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/01/2018新年总结/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张闯">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="Life is a journey,not a race.">
       <meta itemprop="image" content="/images/touxiang.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="闯的博客">
     </span>
 
@@ -532,11 +963,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/01/01/2018新年总结/" itemprop="url">2018新年总结</a></h1>
+                
+                <a href="/2018/01/01/2018新年总结/" class="post-title-link" itemprop="http://yoursite.com/index.html">2018新年总结</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -544,18 +984,35 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-01T15:26:26+08:00">
-                2018-01-01
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-01-01 15:26:26" itemprop="dateCreated datePublished" datetime="2018-01-01T15:26:26+08:00">2018-01-01</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-03-06 18:10:10" itemprop="dateModified" datetime="2018-03-06T18:10:10+08:00">2018-03-06</time>
+              
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -566,11 +1023,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Live/" itemprop="url" rel="index">
-                    <span itemprop="name">Live</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Live/" itemprop="url" rel="index"><span itemprop="name">Live</span></a></span>
 
                 
                 
@@ -631,12 +1084,18 @@
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+       
+    
     
 
     
@@ -669,20 +1128,22 @@
   
   
 
-  <article class="post post-type-Python" itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-Python" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/13/Python/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张闯">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="Life is a journey,not a race.">
       <meta itemprop="image" content="/images/touxiang.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="闯的博客">
     </span>
 
@@ -693,11 +1154,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/06/13/Python/" itemprop="url">Python Tips</a></h1>
+                
+                <a href="/2017/06/13/Python/" class="post-title-link" itemprop="http://yoursite.com/index.html">Python Tips</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -705,13 +1175,30 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-13T13:26:15+08:00">
-                2017-06-13
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2017-06-13 13:26:15" itemprop="dateCreated datePublished" datetime="2017-06-13T13:26:15+08:00">2017-06-13</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-02-05 16:07:32" itemprop="dateModified" datetime="2018-02-05T16:07:32+08:00">2018-02-05</time>
+              
             
           </span>
 
@@ -754,12 +1241,18 @@
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+       
+    
     
 
     
@@ -792,20 +1285,22 @@
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/12/redis写入策略/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张闯">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="Life is a journey,not a race.">
       <meta itemprop="image" content="/images/touxiang.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="闯的博客">
     </span>
 
@@ -816,11 +1311,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/06/12/redis写入策略/" itemprop="url">Redis消息队列策略</a></h1>
+                
+                <a href="/2017/06/12/redis写入策略/" class="post-title-link" itemprop="http://yoursite.com/index.html">Redis消息队列策略</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -828,18 +1332,35 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-12T20:41:50+08:00">
-                2017-06-12
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2017-06-12 20:41:50" itemprop="dateCreated datePublished" datetime="2017-06-12T20:41:50+08:00">2017-06-12</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2017-06-13 22:13:09" itemprop="dateModified" datetime="2017-06-13T22:13:09+08:00">2017-06-13</time>
+              
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -850,11 +1371,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Big-Data/" itemprop="url" rel="index">
-                    <span itemprop="name">Big_Data</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Big-Data/" itemprop="url" rel="index"><span itemprop="name">Big_Data</span></a></span>
 
                 
                 
@@ -923,12 +1440,18 @@
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+       
+    
     
 
     
@@ -961,20 +1484,22 @@
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/03/book/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张闯">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="Life is a journey,not a race.">
       <meta itemprop="image" content="/images/touxiang.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="闯的博客">
     </span>
 
@@ -985,11 +1510,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/04/03/book/" itemprop="url">如何阅读一本书</a></h1>
+                
+                <a href="/2017/04/03/book/" class="post-title-link" itemprop="http://yoursite.com/index.html">如何阅读一本书</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -997,18 +1531,23 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-03T17:41:50+08:00">
-                2017-04-03
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2017-04-03 17:41:50 / 修改时间：16:42:31" itemprop="dateCreated datePublished" datetime="2017-04-03T17:41:50+08:00">2017-04-03</time>
             
 
             
+              
 
+              
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -1019,11 +1558,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Live/" itemprop="url" rel="index">
-                    <span itemprop="name">Live</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Live/" itemprop="url" rel="index"><span itemprop="name">Live</span></a></span>
 
                 
                 
@@ -1118,7 +1653,7 @@
 <ol>
 <li>想象文学：要了解进行分类，诗集小说还是戏剧。然后是抓住大意个部分架构和发展。进行下来是分析，基本元素有插曲、事件和角色，找出主旨追踪论述的发展。最后就是进行总结。</li>
 </ol>
-<ol>
+<ol start="2">
 <li><p>抒情诗：有些内容晦涩，很多人都读不下去，我建议分两步。首先就是不要停，就算不懂也要读下去。然后重读一遍，但要大声的朗读出来。对于这些内容可以不去了解作者以及当时的环境，这我觉得对懂不懂理解不理解完全是两个方向的事情。</p>
 </li>
 <li><p>对于悲剧，精髓一般都在时间上。</p>
@@ -1134,19 +1669,19 @@
 <ul>
 <li><p>1.这个阶段包含了前面的三个层次，其外还要检视阅读相关的章节，检视阅读整本书，随后找出相关章节，这本书的主题对你的问题或你有什么帮助。要理解的是，这个阶段的重点不在于资料或者理解整本书或资料的内容，而是你的主题，重点在于“你的主题”上。</p>
 </li>
-<li><ol>
+<li><ol start="2">
 <li>第二步就是要与作者达成共识，作者的想法对于你的主题有什么帮助。</li>
 </ol>
 </li>
-<li><ol>
+<li><ol start="3">
 <li>随后就要理清你的问题，在你所要理解的主题中存在的各种问题要有一个清晰的归纳。</li>
 </ol>
 </li>
-<li><ol>
+<li><ol start="4">
 <li>接下来就是根据你的问题界定议题，不要把议题扩大超出范围而浪费时间和精力。</li>
 </ol>
 </li>
-<li><ol>
+<li><ol start="5">
 <li>最后就是分析讨论，环绕整个主题进行分析讨论。<br>关于这个层析一定要以“主题”为主，书为辅。另外，在检视阅读以前千万不要进行分析阅读，这样会浪费大量的时间与精力。<br>最后，阅读各种材料的时候不要千篇一律的使用同一种阅读方法，有的经典资料可以进行主题阅读，有些则不需要，这个一定要依据个人而定。<br>下面是我依据逻辑做的思维导图，可以参考一下：</li>
 </ol>
 </li>
@@ -1158,12 +1693,18 @@
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+       
+    
     
 
     
@@ -1196,20 +1737,22 @@
   
   
 
-  <article class="post post-type-Hadoop" itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-Hadoop" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/06/Hadoop Tips/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张闯">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="Life is a journey,not a race.">
       <meta itemprop="image" content="/images/touxiang.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="闯的博客">
     </span>
 
@@ -1220,11 +1763,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/02/06/Hadoop Tips/" itemprop="url">Hadoop Tips</a></h1>
+                
+                <a href="/2017/02/06/Hadoop Tips/" class="post-title-link" itemprop="http://yoursite.com/index.html">Hadoop Tips</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1232,13 +1784,30 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-06T10:15:13+08:00">
-                2017-02-06
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2017-02-06 10:15:13" itemprop="dateCreated datePublished" datetime="2017-02-06T10:15:13+08:00">2017-02-06</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-02-05 16:05:17" itemprop="dateModified" datetime="2018-02-05T16:05:17+08:00">2018-02-05</time>
+              
             
           </span>
 
@@ -1281,12 +1850,18 @@
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+       
+    
     
 
     
@@ -1319,20 +1894,22 @@
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/22/list/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张闯">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="Life is a journey,not a race.">
       <meta itemprop="image" content="/images/touxiang.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="闯的博客">
     </span>
 
@@ -1343,11 +1920,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/01/22/list/" itemprop="url">新年计划</a></h1>
+                
+                <a href="/2017/01/22/list/" class="post-title-link" itemprop="http://yoursite.com/index.html">新年计划</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1355,18 +1941,35 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-01-22T11:00:04+08:00">
-                2017-01-22
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2017-01-22 11:00:04" itemprop="dateCreated datePublished" datetime="2017-01-22T11:00:04+08:00">2017-01-22</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2017-03-04 23:46:51" itemprop="dateModified" datetime="2017-03-04T23:46:51+08:00">2017-03-04</time>
+              
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -1377,11 +1980,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Live/" itemprop="url" rel="index">
-                    <span itemprop="name">Live</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Live/" itemprop="url" rel="index"><span itemprop="name">Live</span></a></span>
 
                 
                 
@@ -1456,418 +2055,9 @@
         
       
     </div>
-    
-    
-    
 
     
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/10/11/java_one/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="张闯">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="闯的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2016/10/11/java_one/" itemprop="url">初学java（一）</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-10-11T11:00:04+08:00">
-                2016-10-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Live/" itemprop="url" rel="index">
-                    <span itemprop="name">Live</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>这次打算写一系列的学习过程，从java开始。</p>
-<blockquote>
-<ul>
-<li>java纯软件运行不涉及到硬件层面</li>
-<li>jdk：java的软件开发工具包，包含java的运行环境</li>
-<li>jit：解释器，just in time 及时编译</li>
-</ul>
-</blockquote>
-<hr>
-<h2 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h2><p>平台：为应用程序运行提供软件或硬件环境，java平台单纯指软件环境<br>jdk目录：</p>
-<blockquote>
-<ul>
-<li>bin：运行相关工具</li>
-<li>db：数据库文件</li>
-<li>include：非java的本地实现</li>
-<li>jre：运行环境（包含JVM）</li>
-<li>src.zip：源代码（类库提供的）</li>
-</ul>
-</blockquote>
-<p>javap：反编译指令<br>javadoc：文档生成器，生成文档<br>命令事例：javadoc -d doc commont.java c:\</p>
-<p>字节码文件与类名一致（有多少个类名就对应多少个字节码文件）运行所需要的字节码文件即可</p>
-<h2 id="一、注释、标识符、变量和数据类型"><a href="#一、注释、标识符、变量和数据类型" class="headerlink" title="一、注释、标识符、变量和数据类型"></a>一、注释、标识符、变量和数据类型</h2><h3 id="1、-注释"><a href="#1、-注释" class="headerlink" title="1、 注释"></a>1、 注释</h3><h4 id="1-1注释的作用："><a href="#1-1注释的作用：" class="headerlink" title="1.1注释的作用："></a>1.1注释的作用：</h4><p>生成文档<br>提高代码可读性</p>
-<h4 id="1-2注释类型"><a href="#1-2注释类型" class="headerlink" title="1.2注释类型"></a>1.2注释类型</h4><p>一共有三种注释<br>1.单行注释  // 注释内容<br>2.多行注释  // 注释内容（多行注释不支持嵌套）<br>3.文档注释  /*注释内容*/</p>
-<h3 id="2、标识符"><a href="#2、标识符" class="headerlink" title="2、标识符"></a>2、标识符</h3><p>标识（zhi）符是指代有意义的符号，一般有以下规则：</p>
-<blockquote>
-<ul>
-<li>由字符、数字、下划线及货币符号组成，但首字符不能为数字。</li>
-<li>不与java中关键字重名。</li>
-<li>不与java中字面常量重名(null、true、false)<br>注意：标识符是区分大小写的。</li>
-</ul>
-</blockquote>
-<hr>
-<h3 id="3、变量"><a href="#3、变量" class="headerlink" title="3、变量"></a>3、变量</h3><p>变量：在程序运行中，其值是可以改变的量，对应于内存中的一个存储单元。<br>构成：类型  名称    值<br>变量的作用范围： 对应于变量的作用域，指变量的有效区域。</p>
-<blockquote>
-<ul>
-<li>成员变量：作用域为整个类（在类的内部直接声明）</li>
-<li>局部变量：从局部变量声明位置开始，到所在最小语句块结束，且局部变量作用域之间无交集可以重命名。</li>
-</ul>
-</blockquote>
-<hr>
-<h3 id="4、数据类型"><a href="#4、数据类型" class="headerlink" title="4、数据类型"></a>4、数据类型</h3><blockquote>
-<ul>
-<li>基本数据类型（可以直接使用）</li>
-<li>引用数据类型（需要事先声明）</li>
-</ul>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">基本数据类型</th>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">字节</th>
-<th style="text-align:center">范围</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">boolean</td>
-<td style="text-align:center">布尔型</td>
-<td style="text-align:center">未规具体占多少空间</td>
-<td style="text-align:center">仅true或false两个值，其他任何值均非法</td>
-</tr>
-<tr>
-<td style="text-align:center">byte</td>
-<td style="text-align:center">整数类型</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">-2^7 ~ 2^7-1</td>
-</tr>
-<tr>
-<td style="text-align:center">short</td>
-<td style="text-align:center">整数类型</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">-2^15 ~ 2^15-1</td>
-</tr>
-<tr>
-<td style="text-align:center">int</td>
-<td style="text-align:center">整数类型</td>
-<td style="text-align:center">4</td>
-<td style="text-align:center">-2^31 ~ 2^31-1</td>
-</tr>
-<tr>
-<td style="text-align:center">long</td>
-<td style="text-align:center">整数类型</td>
-<td style="text-align:center">8</td>
-<td style="text-align:center">-2^63 ~ 2^63-1</td>
-</tr>
-<tr>
-<td style="text-align:center">float</td>
-<td style="text-align:center">浮点类型</td>
-<td style="text-align:center">4</td>
-<td style="text-align:center">单精度(10^-38 ~ 10^38和-10^-38 ~ -10^38 )忽略</td>
-</tr>
-<tr>
-<td style="text-align:center">double</td>
-<td style="text-align:center">浮点类型</td>
-<td style="text-align:center">8</td>
-<td style="text-align:center">双精度 (10^-308~10^308和-10^-308~-10^308)忽略</td>
-</tr>
-<tr>
-<td style="text-align:center">char</td>
-<td style="text-align:center">字符类型</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">0 ~ 2^16-1</td>
-</tr>
-</tbody>
-</table>
-<p>使用整形应该注意的：</p>
-<blockquote>
-<ul>
-<li>在做整数运算的时候，要留心可能的最大整数，检查中间结果溢出。</li>
-</ul>
-</blockquote>
-<p>使用浮点数应遵循的原则：</p>
-<blockquote>
-<ul>
-<li>避免数量级相差巨大的数之间的加减运算</li>
-<li>避免等量判断</li>
-</ul>
-</blockquote>
-<h3 id="5、转义序列"><a href="#5、转义序列" class="headerlink" title="5、转义序列"></a>5、转义序列</h3><blockquote>
-<ul>
-<li>八进制转义（\0~\377表示十进制0~255）</li>
-<li>Unicode转义（\u0000~\uffff）</li>
-<li>转义字符</li>
-</ul>
-</blockquote>
-<h4 id="5-1-转义字符"><a href="#5-1-转义字符" class="headerlink" title="5.1 转义字符"></a>5.1 转义字符</h4><table>
-<thead>
-<tr>
-<th>字符</th>
-<th>表示</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>\b</td>
-<td>退格符</td>
-</tr>
-<tr>
-<td>\r</td>
-<td>回车符</td>
-</tr>
-<tr>
-<td>\’ 单引号’</td>
-<td>单引号</td>
-</tr>
-<tr>
-<td>\” 双引号 “</td>
-<td>双引号</td>
-</tr>
-<tr>
-<td>\n</td>
-<td>换行符</td>
-</tr>
-<tr>
-<td>\t</td>
-<td>制表符</td>
-</tr>
-<tr>
-<td>\f</td>
-<td>换页符</td>
-</tr>
-<tr>
-<td>\\ 反斜杠\</td>
-<td>反斜杠</td>
-</tr>
-</tbody>
-</table>
-<p><strong>为什么要使用转义序列？</strong></p>
-<blockquote>
-<ul>
-<li>某些字符在java中已经有了特殊的含义（例如”，’等）</li>
-<li>某些字符不方便通过键盘输入</li>
-</ul>
-</blockquote>
-<p><strong>转义序列的区别</strong></p>
-<blockquote>
-<ul>
-<li>Unicode转义的处理时间要早于八进制转义与转义字符，并且早于编译器丢弃空白注释之前，\u后面必须要跟4个合理的十六进制数值</li>
-<li>转义序列不会再参与进一步转义</li>
-</ul>
-</blockquote>
-<hr>
-<h2 id="二、-进制、数据类型转换"><a href="#二、-进制、数据类型转换" class="headerlink" title="二、 进制、数据类型转换"></a>二、 进制、数据类型转换</h2><h3 id="1、进制"><a href="#1、进制" class="headerlink" title="1、进制"></a>1、进制</h3><p>java支持四种进制</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">进制</th>
-<th style="text-align:center">前缀</th>
-<th style="text-align:center">注意</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">二进制</td>
-<td style="text-align:center">0b或0B</td>
-</tr>
-<tr>
-<td style="text-align:center">八进制</td>
-<td style="text-align:center">0</td>
-</tr>
-<tr>
-<td style="text-align:center">十进制</td>
-</tr>
-<tr>
-<td style="text-align:center">十六进制</td>
-<td style="text-align:center">0x或0X</td>
-<td style="text-align:center">10~15用a~f表示</td>
-</tr>
-</tbody>
-</table>
-<h4 id="2、数据类型低-gt-高"><a href="#2、数据类型低-gt-高" class="headerlink" title="2、数据类型低-&gt;高"></a>2、数据类型低-&gt;高</h4><p>byte -&gt; short -&gt; int -&gt; long -&gt; float -&gt; double<br>char类型低于int类型取值与byte、short类型重叠，不分高低。boolean类型只能与本类型进行运算而不可以与其他类型。</p>
-<h4 id="3、数据类型转换："><a href="#3、数据类型转换：" class="headerlink" title="3、数据类型转换："></a>3、数据类型转换：</h4><blockquote>
-<ul>
-<li>自动转换：目标类型比源类型更高时自动完成 低 -&gt; 高</li>
-<li>强制转换：目标类型比源类型更低时需要强制完成，使用类型转换符（目标类型） 高 -&gt; 低</li>
-</ul>
-</blockquote>
-<h4 id="4、类型提升"><a href="#4、类型提升" class="headerlink" title="4、类型提升"></a>4、类型提升</h4><p>原则：</p>
-<blockquote>
-<ul>
-<li>byte、short、char提升为int类型</li>
-<li>表达式的结果类型与参与运算的操作数最高类型一致（基于上一条）</li>
-</ul>
-</blockquote>
-<h4 id="5、运算符"><a href="#5、运算符" class="headerlink" title="5、运算符"></a>5、运算符</h4><h5 id="5-1、算数运算符"><a href="#5-1、算数运算符" class="headerlink" title="5.1、算数运算符"></a>5.1、算数运算符</h5><blockquote>
-<ul>
-<li>取余数运算，余数的符号与被除数一致</li>
-</ul>
-</blockquote>
-<h4 id="5-2、三元运算符"><a href="#5-2、三元运算符" class="headerlink" title="5.2、三元运算符"></a>5.2、三元运算符</h4><p>?:<br>判断表达式1 ?   判断表达式2 :   判断表达式3<br>若判断表达式1为true则返回表达式2的值，否则返回表达式3的值</p>
-<h4 id="5-3、移位运算符"><a href="#5-3、移位运算符" class="headerlink" title="5.3、移位运算符"></a>5.3、移位运算符</h4><h5 id="5-3-1、移运算符"><a href="#5-3-1、移运算符" class="headerlink" title="5.3.1、移运算符"></a>5.3.1、移运算符</h5><blockquote>
-<ul>
-<li>左移运算符：将左侧操作数向左移动右侧操作数指定的位数，右侧以0进行填充。 x &lt;&lt; 1</li>
-<li>右移运算符：将左侧操作数向右移动右侧操作数指定的位数，左侧以符号位进行填充。 x &gt;&gt; 1</li>
-<li>无符号右移运算符：将左侧操作数向右移动右侧操作数指定的位数，左侧以0进行填充。   x &gt;&gt;&gt; 1</li>
-</ul>
-</blockquote>
-<h4 id="5-4、-与–运算"><a href="#5-4、-与–运算" class="headerlink" title="5.4、++与–运算"></a>5.4、++与–运算</h4><h4 id="6、注意"><a href="#6、注意" class="headerlink" title="6、注意"></a>6、注意</h4><blockquote>
-<ul>
-<li>char类型无论中英文一律占两个字节</li>
-<li>做除法取整时，向0取整</li>
-<li>浮点类型存储近似值，并不精确</li>
-<li>byte、short与char类型转换时必须强制转换（因无类型高低）</li>
-<li>必须要有运算符才算参与了运算，赋值号并不算运算符（例b = -b参与了运算）</li>
-<li>当数值位数过多时，可以用_进行分割，且必须存在于数字之间</li>
-<li>字面常量int类型表示long类型时，要时候l或L后缀，建议大写</li>
-<li>double -&gt; float类型要使用f或F后缀</li>
-<li>科学计数法用e</li>
-<li>p表示以2为底的计数法，且必须是十六进制（例：f = 0x1.2p6f）</li>
-</ul>
-</blockquote>
-<hr>
-<h3 id="三、-数组、多维数组"><a href="#三、-数组、多维数组" class="headerlink" title="三、    数组、多维数组"></a>三、    数组、多维数组</h3><p>1、数组：相同类型数据的集合，每存在一种类型就会存在一种对应的数组类型，byte[]形式，类型与变量进行有效的分离，数组类型为引用类型。</p>
-<p>2、数组的初始化<br>(1) int[] age = {10,20,30}<br>(2) int[] age = new int[] {10,20,30}<br>(3) int[] age = new int[3]</p>
-<p>区别：</p>
-<blockquote>
-<ul>
-<li>第一种只能在声明的时候初始化</li>
-<li>后两种可以在声明之后初始化</li>
-</ul>
-</blockquote>
-<h4 id="3、元素访问"><a href="#3、元素访问" class="headerlink" title="3、元素访问"></a>3、元素访问</h4><p>元素的访问通过 数组名与下标的方式访问，数组名[]，索引从0开始。<br>length属性可以获取数组的长度（可用于遍历），例age.length</p>
-<h4 id="3-1、数组越界："><a href="#3-1、数组越界：" class="headerlink" title="3.1、数组越界："></a>3.1、数组越界：</h4><p>访问的数组元素，若提供的索引值<0，或者>=数组的长度（length），会发生数组越界（编译没错，运行时产生异常）。</0，或者></p>
-<h4 id="4、局部变量在堆内存"><a href="#4、局部变量在堆内存" class="headerlink" title="4、局部变量在堆内存"></a>4、局部变量在堆内存</h4><blockquote>
-<ul>
-<li>栈内存存放地址，空间有限，随着方法的调用而创建，结束后被销毁</li>
-<li>堆内存，存储具体对象，长期存储，随着虚拟机的启动而创建</li>
-</ul>
-</blockquote>
-<h4 id="5、多维数组"><a href="#5、多维数组" class="headerlink" title="5、多维数组"></a>5、多维数组</h4><p>最多只有255组（1个字节保存数组的维数）<br>n维数组，每个元素类型为（n-1）维数组类型相同<br>初始化同一维数组</p>
-<h2 id="预告：关于java中不存在指针又到处是指针的问题"><a href="#预告：关于java中不存在指针又到处是指针的问题" class="headerlink" title="预告：关于java中不存在指针又到处是指针的问题"></a>预告：关于java中不存在指针又到处是指针的问题</h2>
-          
-        
-      
-    </div>
     
     
     
@@ -1875,164 +2065,8 @@
     
 
     
-
+       
     
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/08/03/hexo-first/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="张闯">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="闯的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2016/08/03/hexo-first/" itemprop="url">使用GitHub和Hexo搭建Blog系列一——安装</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-08-03T17:41:50+08:00">
-                2016-08-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Install/" itemprop="url" rel="index">
-                    <span itemprop="name">Install</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="1、准备工作"><a href="#1、准备工作" class="headerlink" title="1、准备工作"></a>1、准备工作</h2><p>注意：由于本人还没使用过其他平台，所以本文目前只针对<strong>Windows平台</strong>，其他平台有待更新。</p>
-<h3 id="1-1、安装Git"><a href="#1-1、安装Git" class="headerlink" title="1.1、安装Git"></a>1.1、安装Git</h3><p>安装方式方法网上很多教程，此处不再赘述。</p>
-<hr>
-<h3 id="1-2、安装Node-JS"><a href="#1-2、安装Node-JS" class="headerlink" title="1.2、安装Node.JS"></a>1.2、安装Node.JS</h3><p>配置好GitHub目录后，在Git shell中输入npm命令安装<br><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">npm install hexo --save</span><br></pre></td></tr></table></figure></p>
-<hr>
-<h3 id="1-3、Hexo初始化"><a href="#1-3、Hexo初始化" class="headerlink" title="1.3、Hexo初始化"></a>1.3、Hexo初始化</h3><p>安装完成后要进行Hexo的初始化操作</p>
-<h4 id="1-3-1、建立Hexo文件夹"><a href="#1-3-1、建立Hexo文件夹" class="headerlink" title="1.3.1、建立Hexo文件夹"></a>1.3.1、建立Hexo文件夹</h4><p>根据实际情况建立文件目录（如F:\Blog），启动Git Shell并切换到该路径下，执行一下指令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init                       #在文件夹下此命令生成所需文件</span><br><span class="line">cd &lt;folder&gt;</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
-<p>操作结束后，目录如下：<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── scripts</span><br><span class="line">├── source</span><br><span class="line">|      ├── _drafts</span><br><span class="line">|      └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure></p>
-<h4 id="1-3-2、Hexo插件的安装"><a href="#1-3-2、Hexo插件的安装" class="headerlink" title="1.3.2、Hexo插件的安装"></a>1.3.2、Hexo插件的安装</h4><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-archive --save</span><br><span class="line">npm install hexo-generator-category --save</span><br><span class="line">npm install hexo-generator-tag --save</span><br><span class="line">npm install hexo-server --save</span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install hexo-deployer-heroku --save</span><br><span class="line">npm install hexo-deployer-rsync --save  </span><br><span class="line">npm install hexo-deployer-openshift --save</span><br><span class="line">npm install hexo-renderer-marked@<span class="number">0</span>.<span class="number">2</span> --save</span><br><span class="line">npm install hexo-renderer-stylus@<span class="number">0</span>.<span class="number">2</span> --save</span><br><span class="line">npm install hexo-generator-feed@<span class="number">1</span> --save</span><br><span class="line">npm install hexo-generator-sitemap@<span class="number">1</span> --save</span><br></pre></td></tr></table></figure>
-<p>至此，Hexo安装部署的工作基本已经完成了，下面就是要查看一下本地效果了</p>
-<p>执行如下指令查看<br><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></p>
-<p>成功后在本地浏览器地址栏中输入localhost:4000</p>
-<hr>
-<h3 id="1-4、总结"><a href="#1-4、总结" class="headerlink" title="1.4、总结"></a>1.4、总结</h3><blockquote>
-<p>1.安装github   #这个下节会用到<br>2安装Node.JS<br>3.建立Hexo文件夹并初始化<br>4.安装插件</p>
-</blockquote>
-<hr>
-<p>下期预告：github的使用</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
     
 
     
@@ -2061,15 +2095,12 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
 
           </div>
-          
-
-
           
 
         </div>
@@ -2094,63 +2125,89 @@
 
       <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image"
-                src="/images/touxiang.jpg"
-                alt="张闯" />
+              <img class="site-author-image" itemprop="image" src="/images/touxiang.jpg" alt="张闯">
             
               <p class="site-author-name" itemprop="name">张闯</p>
               <p class="site-description motion-element" itemprop="description">Life is a journey,not a race.</p>
           </div>
 
-          <nav class="site-state motion-element">
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
 
-            
-              <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
               
-                  <span class="site-state-item-count">11</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
 
-            
               
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
               
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">7</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
-
+            </nav>
           
 
           
 
           
+
           
 
           
           
 
+          
+            
+          
           
 
         </div>
@@ -2170,17 +2227,19 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">张闯</span>
 
   
+
+  
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
 
 
 
@@ -2188,12 +2247,13 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v6.6.0</div>
 
 
 
 
         
+
 
 
 
@@ -2213,7 +2273,10 @@
     
 
     
+	
+    
 
+    
   </div>
 
   
@@ -2232,10 +2295,18 @@
 
 
 
-  
 
 
+
+
+
   
+    
+      
+  
+  <script type="text/javascript" color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
 
 
 
@@ -2254,16 +2325,6 @@
 
   
   
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
     <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
@@ -2272,23 +2333,13 @@
     <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
-  
-
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=6.6.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=6.6.0"></script>
 
 
 
@@ -2300,21 +2351,7 @@
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.6.0"></script>
 
 
 
@@ -2322,11 +2359,7 @@
 
 
 
-
-
   
-
-
 
 
 
@@ -2350,6 +2383,16 @@
   
 
   
+
+  
+
+  
+  
+
+  
+
+  
+
   
 
   
